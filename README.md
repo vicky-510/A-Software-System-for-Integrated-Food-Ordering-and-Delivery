@@ -5,7 +5,7 @@
 
 
 ```bash
-food-integration
+ foodies
        |        
        |____Back-end
        |        |   
