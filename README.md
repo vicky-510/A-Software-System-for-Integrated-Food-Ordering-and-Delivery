@@ -5,9 +5,9 @@
 
 
 ```bash
- foodies
+###   foodies
        |        
-       |____Back-end
+       |____#### Back-end
        |        |   
        |        |____Home-food
        |        | 
@@ -16,7 +16,7 @@
        |
        |
        |
-       |____Front-end
+       |____#### Front-end
        |        |   
        |        |____about
        |        |      |____about.html (About page)
@@ -67,9 +67,9 @@
        |        |____images
        |        |____pdf
        |        
-       |____index.html
+       |____#### index.html
        |
-       |____Readme.txt
+       |____#### Readme.txt
 
 ```
     
