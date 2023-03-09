@@ -1,0 +1,2 @@
+#### Today i am corrected all the file path and also the background of the food search like banner.
+#### Note: index page food search path needs to be corrected..
