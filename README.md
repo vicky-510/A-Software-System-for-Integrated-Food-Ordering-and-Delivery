@@ -1,12 +1,12 @@
 # A-Software-System-for-Food-Ordering-and-Delivery
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/103897625/225861231-0818dab5-d2ab-419f-97a8-b82500463cbf.gif" width="500" height="500"/>
+</p>
 
-
-
-
-![120952-under-construction-animation](https://user-images.githubusercontent.com/103897625/225861231-0818dab5-d2ab-419f-97a8-b82500463cbf.gif)
 
 ## File Structure
+
 
 ```bash
     foodies
