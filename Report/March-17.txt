@@ -1,0 +1,2 @@
+Today i completed front end for restaurant and home made section. Database visualation is also done and structure is drawn using mindmap.
+Admin section has to be done on tomorrow.
