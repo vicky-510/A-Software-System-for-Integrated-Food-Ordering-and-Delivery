@@ -3,7 +3,10 @@
 <p align="center">
 <img src="https://user-images.githubusercontent.com/103897625/225861231-0818dab5-d2ab-419f-97a8-b82500463cbf.gif" width="500" height="500"/>
 </p>
-
+<br>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/103897625/228876935-367eba7e-d986-4a83-9212-a0654452c40e.gif"/>
+</p> 
 
 ## File Structure
 
