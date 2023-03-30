@@ -1,4 +1,4 @@
-# A Software System for Integrated Food Ordering and Delivery
+# Foodies: A Software System for Integrated Food Ordering and Delivery
 <p align="center" float: left>
 <img src="https://user-images.githubusercontent.com/103897625/228876935-367eba7e-d986-4a83-9212-a0654452c40e.gif"/>
 </p> 
