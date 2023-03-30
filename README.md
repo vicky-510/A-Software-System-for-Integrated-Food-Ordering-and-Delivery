@@ -14,10 +14,11 @@
 ## __Team Size : 3__
 
 
-|Team Leader :| Vigneshwaran M|
-| ------------|---------------|              
-|Team member 1 :| Vishnu chidambaram R|
-|Team member 2 :| Balagi P |
+|Role | Name | Linkedin Profile |
+| ------------|---------------|---------------|
+|Team Leader :| Vigneshwaran M| https://www.linkedin.com/in/vwaran |
+|Team member 1 :| Vishnu chidambaram R| https://www.linkedin.com/in/vishnu-chidambaram-r|
+|Team member 2 :| Balagi P | https://www.linkedin.com/in/balagi-parthasarathy-854b9916a |
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/103897625/225861231-0818dab5-d2ab-419f-97a8-b82500463cbf.gif" width="350" height="350"/>
