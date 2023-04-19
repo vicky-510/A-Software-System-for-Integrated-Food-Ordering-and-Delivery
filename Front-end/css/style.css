@@ -1,0 +1,1444 @@
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.container1{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.container-s{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.container2{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+.text-grey{
+    background-color:#ececec;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff8c00;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.btn-primary{
+    background-color: #182C61;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #6c757d;
+}
+
+.btn-primary1{
+    padding: 1.5%;
+    border: none;
+    font-size: 1rem;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: #00ff15;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.btn-primary1:hover{
+    color: white;
+    background-color: #dfe6e9;
+}
+
+.btn-primary2{
+    padding: 1.5%;
+    border: none;
+    font-size: 1rem;
+    margin-left: 5px;
+    font-weight:500;
+    border-radius: 5px;
+    background-color: #c89b3f;
+    color:black;
+    cursor: pointer;
+}
+.btn-primary2:hover{
+    color: white;
+    background-color: #dfe6e9;
+}
+
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 30%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+/* CSS for Food SEarch Section 
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  */
+
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background-image: url(../images/foodies_home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9% 0;
+}
+
+.food-search input[type="search"]{
+    width: 45%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+.food-search1{
+    background-image: url(../images/foodies_shop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9% 0;
+}
+
+.food-search1 input[type="search"]{
+    width: 45%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+
+.food-search2{
+    background-image: url(../images/foodies_add.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9% 0;
+}
+
+.food-search2 input[type="search"]{
+    width: 45%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+.food-search3{
+    background-image: url(../images/foodies_home-made.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9% 0;
+}
+
+.food-search3 input[type="search"]{
+    width: 45%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+.food-search4{
+    background-image: url(../images/Foodies_train.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9% 0;
+}
+
+.food-search4 input[type="search"]{
+    width: 45%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+.food-search5{
+    background-image: url(../images/foodies_chef.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9% 0;
+}
+
+.food-search5 input[type="search"]{
+    width: 45%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+.food-search6{
+    background-image: url(../images/Foodies_blog.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9% 0;
+}
+
+.food-search6 input[type="search"]{
+    width: 45%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+/* CSS for Food SEarch in registration-home Section */
+
+                                                  /* CSS for index page */
+
+
+/* CSS for Categories */
+.categories{
+    padding: 2% 0;
+    background-color:#ecf0f1;
+    width:"400px";
+    
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+   
+}
+
+
+
+
+/* CSS for Food Menu */
+.food-type{
+    background-color:#182C61; 
+    padding: 6% 0;
+}
+
+
+.food-type-box1{
+    width: 36%;
+    margin: 3%;
+    padding: 3.5%;
+    background-color:#ffd900;
+    color:#182C61;
+    float: left;
+    border-radius: 15px;
+}
+.food-type-box1:hover {
+    background-color: white;
+    color: #ff8c00;
+}
+
+/*   css for registration--rest-Home_Made*/
+.food-type1{
+    background-color: #182C61;
+    padding: 4% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.food-type-box2{
+    width: 35%;
+    margin: 5%;
+    padding: 2%;
+    color:#182C61;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.food-type-box3{
+    width: 40%;
+    margin-left: 25%;
+    padding: 4%;
+    float:none;
+
+    color:#182C61;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+
+/* CSS for  food-service*/
+.food-service{
+    background-color:#ecf0f1; 
+    padding: 4% 0;
+}
+
+.food-service-box2{
+    width: 18%;
+    margin: 3%;
+    float: left;
+    border-radius: 15px;
+}
+#head{
+    font-size: larger;
+}
+
+
+
+.card-big-shadow {
+    max-width: 320px;
+    position: relative;
+}
+
+.coloured-cards .card {
+    margin-top: 30px;
+}
+
+.card[data-radius="none"] {
+    border-radius: 0px;
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.card[data-background="image"] .title, .card[data-background="image"] .stats, .card[data-background="image"] .category, .card[data-background="image"] .description, .card[data-background="image"] .content, .card[data-background="image"] .card-footer, .card[data-background="image"] small, .card[data-background="image"] .content a, .card[data-background="color"] .title, .card[data-background="color"] .stats, .card[data-background="color"] .category, .card[data-background="color"] .description, .card[data-background="color"] .content, .card[data-background="color"] .card-footer, .card[data-background="color"] small, .card[data-background="color"] .content a {
+    color: #FFFFFF;
+}
+.card.card-just-text .content {
+    padding: 50px 65px;
+    text-align: center;
+}
+.card .content {
+    padding: 20px 20px 10px 20px;
+}
+.card[data-color="blue"] .category {
+    color: #7a9e9f;
+}
+
+.card .category, .card .label {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.card-big-shadow:before {
+    background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: -12%;
+    content: "";
+    display: block;
+    left: -12%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+h4, .h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+h6, .h6 {
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card .description {
+    font-size: 16px;
+    color: #66615b;
+}
+.content-card{
+    margin-top:30px;    
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/*======== COLORS ===========*/
+.card[data-color="blue"] {
+    background: #3498db;
+}
+.card[data-color="blue"] .description {
+    color: #000000;
+}
+
+.card[data-color="green"] {
+    background: #2ecc71;
+}
+.card[data-color="green"] .description {
+    color: #000000;
+}
+.card[data-color="green"] .category {
+    color: #000000;
+}
+
+.card[data-color="yellow"] {
+    background: #f1c40f;
+}
+.card[data-color="yellow"] .description {
+    color: #000000;
+}
+.card[data-color="yellow"] .category {
+    color: #000000;
+}
+
+.card[data-color="rose"] {
+    background: #FDA7DF;
+}
+.card[data-color="rose"] .description {
+    color: #000000;
+}
+.card[data-color="rose"] .category {
+    color: #000000;
+}
+
+.card[data-color="purple"] {
+    background: #baa9ba;
+}
+.card[data-color="purple"] .description {
+    color: #3a283d;
+}
+.card[data-color="purple"] .category {
+    color: #5a283d;
+}
+
+.card[data-color="orange"] {
+    background: #ff8f5e;
+}
+.card[data-color="orange"] .description {
+    color: #772510;
+}
+.card[data-color="orange"] .category {
+    color: #e95e37;
+}
+
+
+
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 2% auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+
+
+
+
+/* CSS for FAQ*/
+
+.faq-section {
+    background: #ecf0f1;                      /*  FAQ Bg color*/
+    min-height: 60vh;
+    padding: 10vh 0 0;
+}
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+.faq-title h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #E91E63;
+    bottom: -25px;
+    margin-left: -30px;
+}
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+.faq {
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: #182C61;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    background: rgba(233, 30, 99, 0.1);
+    padding-left: 10px;
+}
+.faq .card .card-header .faq-title:hover {
+    color: #000;
+}
+
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: #E91E63;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 15px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+
+
+
+
+/* Css for blog */
+
+.blog-food{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/food-order-7a907.appspot.com/o/images%2Ffood%20blog%2Ffood_blog1.png?alt=media&token=311b966f-a2e9-4e56-bc17-8dbfdaa5cff6); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13% 0;
+}
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+ 
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+
+.blog-text1 {
+    position: absolute;   
+     bottom: 100%;
+     left: 50%;
+     font-size: x-large;
+     transform: translate(-50%, -250%);
+     border-bottom-style: solid;
+     border-bottom-color: #E91E63;
+     color: white;
+   }
+
+.blog-text2 {
+  
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-12%, -130%);
+  line-height: 24px;
+  width: 60%;
+  font-size: large;
+  color: white;
+}
+
+
+.blog-btn {
+  
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-60%, 10%);
+    font-size: large;
+    
+
+   
+  }
+  .button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button2 {
+    background-color: #4CAF50; 
+    color: rgb(255, 255, 255); 
+    border-radius: 5px;
+  }
+  
+  .button2:hover {
+    background-color: #78d17b;
+    color: rgb(0, 0, 0);
+  }
+
+ /* Css for testimonals */
+  @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+  figure.snip1390 {
+    font-family: 'Roboto', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin-top:10px;
+    margin-left: 255px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    background-color: #182C61;
+    padding: 30px;
+    background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+  }
+  figure.snip1390 *,
+  figure.snip1390 *:before,
+  figure.snip1390 *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  figure.snip1390 figcaption {
+    width: 100%;
+  }
+  figure.snip1390 h2,
+  figure.snip1390 h4,
+  figure.snip1390 blockquote {
+    margin: 0;
+  }
+  figure.snip1390 h2,
+  figure.snip1390 h4 {
+    font-weight: 300;
+  }
+  figure.snip1390 h2 {
+    color: #ffffff;
+  }
+  figure.snip1390 h4 {
+    color: #a6a6a6;
+  }
+  figure.snip1390 blockquote {
+    font-size: 1em;
+    padding: 45px 20px 40px 50px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    position: relative;
+  }
+  figure.snip1390 blockquote:before {
+    font-family: 'FontAwesome';
+    content: "\201C";
+    position: absolute;
+    font-size: 70px;
+    opacity: 0.25;
+    font-style: normal;
+    top: 0px;
+    left: 20px;
+  }
+  figure.snip1390 .profile {
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+    border: solid 5px #A6A57A;
+  }
+  
+  
+  
+/* CSS for testimonal */
+.food-testimonal{
+    background-color:#ecf0f1; 
+    padding: 4% 0;
+}
+.food-menu-box3{
+    width: 20%;
+    margin: 1%;
+    float: left;
+    border-radius: 15px;
+}
+
+
+/* css for banner home*/
+.home-banner{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/food-order-7a907.appspot.com/o/about%20images%2Fabout_home.png?alt=media&token=011cc825-1416-4344-91d2-562e49acf22d);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4% 0;
+}
+
+#banner-h2-home{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #E91E63;
+    width: fit-content;
+
+}
+
+#banner-pg-home{
+    width: 55%;
+    color: #ffffff;
+  
+   
+}
+
+
+
+
+
+
+                                               /* CSS for home page */
+
+   /* CSS for Food Menu */
+   .food-menu{
+       background-color:#182C61; 
+       padding: 4% 2%;
+   }
+   .food-menu-box{
+       width: 24%;
+       margin: 3%;
+       margin-bottom: 10px;
+       padding: 0.5%;
+       background-color: #ffffff;
+       border: 2px solid #dfe6e9;
+       float: left;
+       border-radius: 15px;
+   }
+   .food-menu-img{
+       width: 100%; 
+       border-radius: 15px 15px 0 0;
+   }
+   .food-menu-desc{
+       width: 100%;
+       float: left;
+       margin-left: 2%;
+       margin-top: 2px;
+   }
+   .food-price{
+       font-size: 1.2rem;
+       margin: 2% 65%;
+   }
+   .food-detail{
+       font-size: 1rem;
+       color: #747d8c;
+       margin-left: 5px;
+   }
+   #food-order{
+       float: left;
+       margin-left: 0%;
+       padding: 6px;
+       color: #000;
+       background-color: #00ff15;
+       font-weight: bold;
+       border-radius: 5px;
+   }
+
+  
+
+                                                  /* CSS for about page*/
+
+
+
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container {
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.card-container .pro {
+	color: #231E39;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+    
+
+}
+
+.card-container .round {
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+    margin-top: 30px;
+	padding: 7px;
+}
+
+button.primary {
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+.skills {
+	background-color: #1F1A36;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #2D2747;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+
+                                              
+
+
+.about{
+    background-color:#1B9CFC; 
+    padding: 6% 0;
+}
+
+
+
+.about-menu-box1{
+    width: 21%;
+    margin: 1%;
+    align-items: center;
+    float: left;
+    margin-left: 130px;
+    border-radius: 15px;
+   
+}
+/* css for banner about*/
+.food-banner{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/food-order-7a907.appspot.com/o/about%20images%2Fabout-banner.png?alt=media&token=6e0cda20-dbc6-4221-a4f0-8beb30fd792f);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4% 0;
+}
+
+#banner-h2{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-left: 750px;
+    color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #E91E63;
+    width: fit-content;
+
+}
+
+#banner-pg{
+    margin-left: 525px;
+    color: #ffffff;
+  
+   
+}
+                                           /* CSS from back-end admin*/     
+
+.success{
+    padding: 15px;
+    background-color: #44ff00;
+    width:fit-content;
+    color: black;
+
+}
+
+.error{
+        padding: 15px;
+        background-color: #ff2600;
+        width:fit-content;
+
+        color: rgb(255, 255, 255);
+}
+
+
+#the-count1 {
+    float: right;
+    padding: 0.1rem 0 0 0;
+    font-size: 0.875rem;
+  }
+  #the-count2 {
+    float: right;
+    padding: 0.1rem 0 0 0;
+    font-size: 0.875rem;
+  }
+
+                                           /* CSS for foods page*/                                         
+
+
+
+ 
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 100%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .food-menu-box1{
+        width: 100%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .food-menu-box2{
+        width: 100%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+   
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+
+    
+    .food-testimonal{
+        background-color:#ecf0f1; 
+        padding: 0% 0;
+    }
+    .food-menu-box3{
+        width: 30%;
+        float: none;       
+        border-radius: 15px;
+    }
+
+    figure.snip1390 {
+        font-family: 'Roboto', Arial, sans-serif;
+        position: relative;
+        margin-top: 20px;
+
+        overflow: hidden;
+        margin-top: 20px;
+        margin-left: 70px;
+        margin-right:  60px;
+        height: 10%;
+        width: 10%;
+        color: #000000;
+        font-size: 10px;
+        background-color: #182C61;
+        padding: 5px;
+        background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 1;
+      }
+}
+
+
+@media (max-width: 991px) {
+    .faq {
+      margin-bottom: 30px;
+    }
+    .faq .card .card-header .faq-title {
+      line-height: 26px;
+      margin-top: 10px;
+    }
+  }
+
+
+  /* pratice */
+
+ /* CSS for mobile */
+@media screen and (max-width: 767px) {
+    .container{
+      width: 100%;
+    }
+    .container1{
+      width: 100%;
+    }
+    .btn-primary{
+        width: 67%;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    .btn-primary1{
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    .float-text{
+      bottom: 20px;
+      left: 20%;
+    }
+    fieldset{
+      margin: 2%;
+      padding: 2%;
+    }
+   
+    h2{
+      font-size: 1.5rem;
+    }
+    h3{
+      font-size: 1.2rem;
+    }
+  
+
+  
+    .logo{
+    width: 50%;
+    float: none;
+    margin: 0 auto;
+    }
+    .menu{
+    line-height: 30px;
+    }
+    .menu ul li{
+    display: block;
+    padding: 5px;
+    text-align: center;
+    }
+    
+    /* CSS for Food SEarch Section */
+    .food-search input[type="search"]{
+    width: 67%;
+    margin: 20px;
+    }
+    .food-search1 input[type="search"]{
+        width: 67%;
+        margin: 20px;
+
+    }
+    .food-search2 input[type="search"]{
+        width: 67%;
+        margin: 20px;
+
+    }
+    .food-search3 input[type="search"]{
+        width: 67%;
+        margin: 20px;
+    }
+
+
+        /* CSS for Categories */
+        .categories {
+          padding: 4% 0;
+        }
+        
+        .box-3 {
+          width: 100%;
+          float: none;
+          margin: 0;
+        }
+      
+        /* CSS for Food Menu */
+        .food-type-box1,
+        .food-type-box2 {
+          width: 70%;
+          margin-left: 35px;
+          padding: 4%;
+          text-align: center;
+          float: none;
+        }
+        
+        /* CSS for food-service*/
+        .food-service-box2 {
+            width: 100%;
+            margin: 0;
+            float: none;
+          }
+          .card-big-shadow:before {
+            display: none;
+          }
+      }
+      
+      /* For mobile devices */
+@media (max-width: 767px) {
+
+    .food-service-box2 {
+      width: 70%;
+      margin-left: 55px;
+      margin-bottom: 5px;
+    }
+    
+    .content {
+      padding: 10px;
+    }
+    
+    h4.title {
+      font-size: 18px;
+    }
+    
+    p.description {
+      font-size: 14px;
+    }
+
+
+    
+.blog-food{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/food-order-7a907.appspot.com/o/images%2Ffood%20blog%2Ffood_blog1.png?alt=media&token=311b966f-a2e9-4e56-bc17-8dbfdaa5cff6); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30% 0;
+}
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+ 
+  /* Set a specific height */
+  height:100%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+
+.blog-text1 {
+    position: absolute;   
+     bottom: 100%;
+     left: 50%;
+     font-size: 12px;
+     transform: translate(-35%, -220%);
+     border-bottom-style: solid;
+     border-bottom-color: #E91E63;
+     color: white;
+   }
+
+.blog-text2 {
+  
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-12%, -50%);
+  line-height: 15px;
+  width: 50%;
+  font-size: 9px;
+  color: white;
+}
+
+
+.blog-btn {
+  
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-40%, 200%);
+    font-size: 8px;
+    
+
+   
+  }
+  .button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button2 {
+    background-color: #4CAF50; 
+    color: rgb(255, 255, 255); 
+    border-radius: 5px;
+  }
+  
+  .button2:hover {
+    background-color: #78d17b;
+    color: rgb(0, 0, 0);
+  }
+
+
+  /* css for banner home*/
+.home-banner{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/food-order-7a907.appspot.com/o/about%20images%2Fabout_home.png?alt=media&token=011cc825-1416-4344-91d2-562e49acf22d);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2% 0;
+}
+
+#banner-h2-home{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    border-bottom-style: solid;
+    border-bottom-color: #E91E63;
+    width: fit-content;
+
+}
+
+#banner-pg-home{
+    width: 45%;
+    font-size: 14px;
+    color: #ffffff;
+  
+   
+}
+    
+  }
+  
+

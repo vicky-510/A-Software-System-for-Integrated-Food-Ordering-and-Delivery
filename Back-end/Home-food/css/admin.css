@@ -1,0 +1,543 @@
+/* admin css  */
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.wrapper{
+    padding: 1%;
+    width:80%;
+    margin: 0 auto;
+}
+
+.wrapper1{
+    padding: 1.45%;
+
+    width:80%;
+    margin: 0 auto;
+
+}
+.wrapper2{
+    padding: 1%;
+
+    width:87%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.menu{
+    border-bottom: 1px solid black;
+    background-color: #182C61;
+    padding: .7%;
+}
+
+/* css for menu */
+.menu ul{
+    list-style-type: none;
+    text-align: left;
+
+
+}
+
+.menu ul li{
+    display: inline;
+
+    padding: 1.5%;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+.menu ul li a:hover{
+    color:rgb(254, 165, 0);
+}
+
+/* css for main content */
+
+.main-content{
+    background-color: var(--veryLightGray);
+
+}
+
+
+
+/* css for footer */
+.footer{
+    background-color:#182C61; 
+   color: white;
+   padding: .5%;
+
+}
+
+/* css for main dash card */
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--veryLightGray);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+
+h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--grayishBlue);
+}
+
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;  
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 5px solid var(--orange);
+
+}
+.red {
+    border-top: 5px solid var(--orange);
+    }
+.blue {
+    border-top: 5px solid var(--orange);
+   }
+.orange {
+   
+    border-top: 5px solid var(--orange);
+
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box {
+        width: 20%;
+     
+    }
+    .header p {
+        width: 30%;
+    }
+    
+}
+
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+
+/* css for manage admin */
+.tbl-full{
+    width:100%;
+}
+
+table tr th {
+    border:2px solid rgb(0, 0, 0);
+
+    padding:1.5%;
+    color: black;
+    font-weight: bold;
+
+    background-color:rgb(255, 153, 0);
+}
+
+td{
+    text-align: center;
+    color:white;
+    font-weight: 500;
+
+    background-color:navy;
+    padding: 1%;
+}
+
+.btn-primary{
+    background-color: #1B9CFC;
+    padding: .75%;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    margin-left: 1100px;
+    text-decoration: none;
+}
+.btn-primary:hover{
+    background-color: #4aaffc;
+    color:rgb(255, 255, 255);
+
+}
+
+.btn-primary-f{
+    background-color: #1B9CFC;
+    padding: .75%;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    margin-left: 1200px;
+    text-decoration: none;
+}
+.btn-primary-f:hover{
+    background-color: #4aaffc;
+    color:rgb(255, 255, 255);
+
+}
+
+
+
+.btn-primary1{
+    background-color: #1B9CFC;
+    padding: .75%;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn-primary1:hover{
+    background-color: #4aaffc;
+    color:rgb(255, 255, 255);
+
+}
+.btn-primary2{
+    background-color: #1B9CFC;
+    padding: .75%;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    margin-left: 1050px;
+    text-decoration: none;
+}
+.btn-primary2:hover{
+    background-color: #4aaffc;
+    color:rgb(255, 255, 255);
+
+}
+
+.btn-secondary{
+    background-color:#00ff6a;
+    padding: 1%;
+    margin:5px;
+    border-radius: 5px;
+    color:rgb(0, 0, 0);
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn-secondary:hover{
+    background-color:#82f6b2;
+    color:rgb(0, 0, 0);
+
+}
+
+
+.btn-secondary1{
+    background-color:#00ff6a;
+    padding: 3%;
+    margin:5px;
+    border-radius: 5px;
+    color:rgb(0, 0, 0);
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn-secondary1:hover{
+    background-color:#82f6b2;
+    color:rgb(0, 0, 0);
+
+}
+
+
+.btn-danger{
+    background-color:#ff3700;
+    padding: 1%;
+    margin:5px;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn-danger:hover{
+    background-color:#f66147;
+
+}
+
+
+.btn-danger1{
+    background-color:#ff3700;
+    padding: 3%;
+    margin:5px;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn-danger1:hover{
+    background-color:#f66147;
+
+}
+
+.success{
+    padding: 15px;
+    background-color: #44ff00;
+    width:fit-content;
+    color: black;
+
+}
+
+.error{
+        padding: 15px;
+        background-color: #ff2600;
+        width:fit-content;
+
+        color: rgb(255, 255, 255);
+}
+
+.f-details1{
+    padding: 5px;
+    background-color:#B33771;
+    width:fit-content;
+    color: white;
+    margin-left:10px;
+    border-radius: 3px;
+    text-decoration: none;
+
+
+}
+
+.f-details2{
+    padding: 5px;
+    background-color:#1B9CFC;
+    width:fit-content;
+    color: white;
+    margin-left:10px;
+    border-radius: 3px;
+    text-decoration: none;
+
+
+}
+
+.f-details3{
+    padding: 5px;
+    background-color:#009432;
+    width:fit-content;
+    color: white;
+    margin-left:10px;
+    border-radius: 3px;
+    text-decoration: none;
+
+
+
+}
+.f-4{
+    padding: 5px;
+    background-color:rgb(128, 0, 255);
+    width:fit-content;
+    color: rgb(255, 255, 255);
+    margin-left:10px;
+    border-radius: 3px;
+    text-decoration: none;
+
+
+
+}
+
+
+
+/* css for add admin */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+
+input {
+	appearance: none;
+	border-radius: 0;
+}
+
+.card1 {
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 425px;
+	background-color: #FFF;
+	border-radius: 10px;
+    border:1px solid rgb(209, 209, 209);
+	box-shadow: 0 10px 20px 0 rgba(#8a8888, .25);
+	padding: .55rem;
+}
+
+.card-image1 {
+	border-radius: 8px;
+	overflow: hidden;
+	padding-bottom: 65%;
+	background-image: url('https://assets.codepen.io/285131/coffee_1.jpg');
+	background-repeat: no-repeat;
+	background-size: 150%;
+	background-position: 0 5%;
+	position: relative;
+}
+
+.card-heading1 {
+	position: absolute;
+	left: 10%;
+	top: 15%;
+	right: 10%;
+	font-size: 1.75rem;
+	font-weight: 700;
+	color: #735400;
+	line-height: 1.222;
+	
+}
+
+.card-form1 {
+	padding: 2rem 1rem 0;
+}
+
+.input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	
+}
+
+.input-label {
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: .25s ease;
+}
+
+.input-field {
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee; 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+	
+}
+
+.action1 {
+	margin-top: 2rem;
+}
+
+.action-button1 {
+	font: inherit;
+	font-size: 1.25rem;
+	padding: 1%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+	
+}
+
+.card-info1 {
+	padding: 1rem 1rem;
+	text-align: center;
+	font-size: .875rem;
+	color: #8597a3;
+	
+}
+
+/* css for login */
+
