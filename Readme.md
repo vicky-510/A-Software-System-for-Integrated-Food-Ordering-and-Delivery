@@ -227,32 +227,32 @@ An Integrated web application used to order restaurant and home made foods, hire
        |        |        |
        |        |        |______Home-made
        |        |        |          |
-       |        |        |          |______home-categories.html  (Categories page)
+       |        |        |          |______home-categories.php  (Categories page)
        |        |        |          |
-       |        |        |          |______home-categories-foods.html
+       |        |        |          |______home-categories-foods.php
        |        |        |          |
-       |        |        |          |______home-foods.html     (Food menu page)
+       |        |        |          |______home-foods.php     (Food menu page)
        |        |        |          |
-       |        |        |          |______home-food-search.html
+       |        |        |          |______home-food-search.php
        |        |        |          |
-       |        |        |          |______home-made.html (Home page for Home made foods)
+       |        |        |          |______home-made.php (Home page for Home made foods)
        |        |        |          |
-       |        |        |          |______home-order.html
+       |        |        |          |______home-order.php
        |        |        |           
        |        |        |
        |        |        |______Restaurant
        |        |                   |
-       |        |                   |______restaurant.html    (Home Page for Restaurant foods)
+       |        |                   |______restaurant.php    (Home Page for Restaurant foods)
        |        |                   |
-       |        |                   |______rest-categories.html   (Categories page)
+       |        |                   |______rest-categories.php   (Categories page)
        |        |                   |
-       |        |                   |______rest-categories-foods.html
+       |        |                   |______rest-categories-foods.php
        |        |                   |
-       |        |                   |______rest-foods.html     (Food menu page)
+       |        |                   |______rest-foods.php     (Food menu page)
        |        |                   |
-       |        |                   |______rest-food-search.html
+       |        |                   |______rest-food-search.php
        |        |                   |
-       |        |                   |______rest-order.html     
+       |        |                   |______rest-order.php     
        |        |        
        |        |____images(all images)
        |        |____pdf
