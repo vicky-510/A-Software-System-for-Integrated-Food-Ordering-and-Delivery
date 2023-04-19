@@ -1,0 +1,18 @@
+# Haversine formula
+    The formula used in the code is the Haversine formula, which is a formula that calculates the great-circle distance between two points on a sphere (such as the Earth). The Haversine formula takes into account the curvature of the Earth's surface, making it more accurate than simpler methods that assume a flat Earth.
+
+The formula is as follows:
+
+a = sin²(Δlat/2) + cos(lat1) * cos(lat2) * sin²(Δlon/2)
+c = 2 * atan2( √a, √(1−a) )
+d = R * c
+
+Where:
+
+lat1 and lon1 are the latitude and longitude of the train location, in radians.
+lat2 and lon2 are the latitude and longitude of the restaurant location, in radians.
+Δlat = lat2 - lat1
+Δlon = lon2 - lon1
+R is the radius of the Earth (in this case, 6373.0 km, which is the average radius of the Earth).
+d is the distance between the two points, in kilometers.
+The formula calculates the distance between two points on a sphere using the angle between them (in this case, the angle between the two points on the Earth's surface). The formula uses the trigonometric functions sin and cos to calculate this angle, and the inverse tangent function atan2 to convert the angle to a distance.
