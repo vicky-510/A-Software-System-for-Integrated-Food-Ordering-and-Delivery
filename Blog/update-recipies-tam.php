@@ -264,14 +264,14 @@ if(isset($_POST['submit']))	 {
 //echo"clicked";
 
 //get the value from category form
-   $title = $_POST['title'];
-   $description =$_POST['description']; 
-   $rem_description =$_POST['rem_description'];   
-   $type = $_POST['type'];
-   $timing = $_POST['timing'];
-   $serving = $_POST['serving'];
-   $ingredients = $_POST['ingredients'];
-   $current_image = $_POST['current_image'];
+   $title =  mysqli_real_escape_string($conn,$_POST['title']);
+   $description = mysqli_real_escape_string($conn,$_POST['description']); 
+   $rem_description = mysqli_real_escape_string($conn,$_POST['rem_description']);   
+   $type =  mysqli_real_escape_string($conn,$_POST['type']);
+   $timing =  mysqli_real_escape_string($conn,$_POST['timing']);
+   $serving =  mysqli_real_escape_string($conn,$_POST['serving']);
+   $ingredients =  mysqli_real_escape_string($conn,$_POST['ingredients']);
+   $current_image =  mysqli_real_escape_string($conn,$_POST['current_image']);
 
 
 

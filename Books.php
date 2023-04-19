@@ -61,14 +61,9 @@
      <!-- fOOD sEARCH Section Starts Here -->
      <section class="food-search6 text-center">
         <div class="container">
-        <form action="<?php echo SITEURL; ?>Recipies-search.php" method="POST">
         <a href="#" style="font-size:20px; font-weight:bold; border:5px; padding:8px 16px; background-color: #182C61; color: white; ">A single book can chane your life</a><br><br>
 
                 <span style="font-size:22px; font-weight:bold; color:navy;">Want to add your Recipie Book  <a href="<?php echo SITEURL; ?>Blog/add-books.php" style="font-size:20px; font-weight:bold; color:green;">Click here</a><span><br><br>
-
-
-            </form>
-
 
             <br>
             <?php

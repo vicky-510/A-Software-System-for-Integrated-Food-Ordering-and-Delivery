@@ -174,17 +174,17 @@ if(isset($_POST['submit']))	 {
 //echo"clicked";
 
 //get the value from category form
-   $food = $_POST['food'];
-   $qty = $_POST['qty'];
-   $train_name = $_POST['train_name'];
-   $train_url = $_POST['train_url'];
-   $rest_name = $_POST['rest_name'];               
-   $rest_url = $_POST['rest_url'];
+   $food = mysqli_real_escape_string($conn,$_POST['food']);
+   $qty = mysqli_real_escape_string($conn,$_POST['qty']);
+   $train_name = mysqli_real_escape_string($conn,$_POST['train_name']);
+   $train_url = mysqli_real_escape_string($conn,$_POST['train_url']);
+   $rest_name = mysqli_real_escape_string($conn,$_POST['rest_name']);               
+   $rest_url = mysqli_real_escape_string($conn,$_POST['rest_url']);
    $order_date =date("Y-m-d h:i:sa");
    $status="Ordered"; //ordered, undelivery cancelled 
-   $cust_name = $_POST['cust_name'];
-   $cust_email = $_POST['cust_email'];
-   $cust_number = $_POST['cust_number'];
+   $cust_name = mysqli_real_escape_string($conn,$_POST['cust_name']);
+   $cust_email = mysqli_real_escape_string($conn,$_POST['cust_email']);
+   $cust_number = mysqli_real_escape_string($conn,$_POST['cust_number']);
   
 
    //create sql to store data

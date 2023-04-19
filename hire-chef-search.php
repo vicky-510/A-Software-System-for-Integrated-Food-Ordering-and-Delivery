@@ -67,7 +67,7 @@
     <section class="food-search5 text-center">
         <div class="container">
         <?php
-        $chef = $_POST['chef'];
+        $chef = mysqli_real_escape_string($conn,$_POST['chef']);
 
 
         ?>

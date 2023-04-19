@@ -98,10 +98,10 @@
 		// Check if the form has been submitted
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			// Get the form data
-			$train_lat = $_POST['train_lat'];
-			$train_lon = $_POST['train_lon'];
-			$restaurant_lat = $_POST['restaurant_lat'];
-			$restaurant_lon = $_POST['restaurant_lon'];
+			$train_lat = mysqli_real_escape_string($conn,$_POST['train_lat']);
+			$train_lon = mysqli_real_escape_string($conn,$_POST['train_lon']);
+			$restaurant_lat = mysqli_real_escape_string($conn,$_POST['restaurant_lat']);
+			$restaurant_lon = mysqli_real_escape_string($conn,$_POST['restaurant_lon']);
 
 			// Validate the form data
 			if (!is_numeric($train_lat) || !is_numeric($train_lon) || !is_numeric($restaurant_lat) || !is_numeric($restaurant_lon)) {

@@ -76,10 +76,14 @@
                // echo "Button clicked";
                
                //get data from form
-               $id=$_POST['id'];
-               $current_password = md5($_POST['current_password']);
-               $new_password = md5($_POST['new_password']);
-               $confirm_password = md5($_POST['confirm_password']);
+               $id=mysqli_real_escape_string($conn,$_POST['id']);
+               $c_password = md5($_POST['current_password']);
+               $current_password =mysqli_real_escape_string($conn,$c_password);
+               $n_password = md5($_POST['new_password']);
+               $new_password = mysqli_real_escape_string($conn,$_POST['n_password']);
+               $con_password = md5($_POST['confirm_password']);
+               $confirm_password = mysqli_real_escape_string($conn,$con_password);
+
 
                //check whether the user with current id and current password exists or not
 

@@ -44,8 +44,10 @@
     {
         //Process for Login
         //1. Get the Data from Login form
-         $username = $_POST['username'];
-         $pwd = md5($_POST['pwd']);
+         $username =  mysqli_real_escape_string($conn,$_POST['username']);
+         $raw_pwd= md5($_POST['pwd']);
+         $pwd = mysqli_real_escape_string($conn,$raw_pwd);
+
         
 
         //2. SQL to check whether the user with username and password exists or not

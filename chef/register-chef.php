@@ -187,19 +187,19 @@ if(isset($_POST['submit']))	 {
 //echo"clicked";
 
 //get the value from category form
-   $username = $_POST['username'];
-   $pwd = md5($_POST['pwd']);  ///password encryption with md5
-   $name = $_POST['name'];
-   $age = $_POST['age'];
-   $salary_work = $_POST['salary_work'];
-   $salary_function = $_POST['salary_function'];
-   $skills = $_POST['skills'];               
-   $experience = $_POST['experience'];
+   $username =  mysqli_real_escape_string($conn,$_POST['username']);
+   $raw_pwd = md5($_POST['pwd']);  ///password encryption with md5
+   $pwd =    mysqli_real_escape_string($conn,$raw_pwd);  ///password encryption with md5
+   $name =  mysqli_real_escape_string($conn,$_POST['name']);
+   $age =  mysqli_real_escape_string($conn,$_POST['age']);
+   $salary_work =  mysqli_real_escape_string($conn,$_POST['salary_work']);
+   $salary_function =  mysqli_real_escape_string($conn,$_POST['salary_function']);
+   $skills =  mysqli_real_escape_string($conn,$_POST['skills']);               
+   $experience =  mysqli_real_escape_string($conn,$_POST['experience']);
    $register_date =date("Y-m-d h:i:sa");
-   $contact = $_POST['contact'];
-   $email = $_POST['email'];
-   $address = $_POST['address'];
-
+   $contact =  mysqli_real_escape_string($conn,$_POST['contact']);
+   $email =  mysqli_real_escape_string($conn,$_POST['email']);
+   $address =  mysqli_real_escape_string($conn,$_POST['address']);
 
    
                          //check whether the image is selected or not

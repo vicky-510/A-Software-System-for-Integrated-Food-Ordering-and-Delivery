@@ -83,7 +83,7 @@
 		//echo"clicked";
             
 		//get the value from category form
-		$title = $_POST['title'];
+		$title =  mysqli_real_escape_string($conn,$_POST['title']);
 
 		//featured
 
@@ -91,7 +91,7 @@
 		if(isset($_POST['featured'])){
 
 			//get the value from form
-			$featured = $_POST['featured'];
+			$featured =  mysqli_real_escape_string($conn,$_POST['featured']);
 		}
 		else{
 			//set the default value
@@ -105,7 +105,7 @@
 		if(isset($_POST['active'])){
 
 			//get the value from form
-			$active = $_POST['active'];
+			$active =  mysqli_real_escape_string($conn,$_POST['active']);
 		}
 		else{
 			//set the default value

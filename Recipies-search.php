@@ -62,7 +62,7 @@
         <div class="container">
        
         <?php
-        $recipies = $_POST['recipies'];
+        $recipies = mysqli_real_escape_string($conn,$_POST['recipies']);
 
 
         ?>

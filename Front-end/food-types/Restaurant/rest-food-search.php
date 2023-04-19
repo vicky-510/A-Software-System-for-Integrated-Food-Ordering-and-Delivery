@@ -115,7 +115,7 @@
         <div class="container">
         
         <?php
-        $search = $_POST['search'];
+        $search = mysqli_real_escape_string($conn, $_POST['search']);
 
 
         ?>
@@ -140,6 +140,7 @@
          //get the search keyword 
 
         //sql to query to get foods based on search keyword
+
         $sql = "SELECT * FROM food_rest WHERE title LIKE '%$search%' OR description LIKE '%$search%' ";
 
         //execute the query

@@ -173,6 +173,7 @@ else{
            //create sql query to get all active categories from database
            $sql1 = "SELECT * FROM category_home WHERE active='Yes' ";
 
+
            //executing the query
            $res1 = mysqli_query($conn, $sql1);
           
@@ -246,18 +247,18 @@ else{
 		//echo"clicked";
             
 		//get the value from category form
-		            $id = $_POST['id'];
-                $title = $_POST['title'];
-                $description = $_POST['description'];
-                $home_name = $_POST['home_name'];
-                $home_address = $_POST['home_address'];
-                $home_district = $_POST['home_district'];
-                $home_number = $_POST['home_number'];
-                $price = $_POST['price'];
-                $current_image = $_POST['current_image'];
-                $category = $_POST['category'];
-                $featured = $_POST['featured'];
-                $active = $_POST['active'];
+		            $id =  mysqli_real_escape_string($conn,$_POST['id']);
+                $title =  mysqli_real_escape_string($conn,$_POST['title']);
+                $description =  mysqli_real_escape_string($conn,$_POST['description']);
+                $home_name =  mysqli_real_escape_string($conn,$_POST['home_name']);
+                $home_address =  mysqli_real_escape_string($conn,$_POST['home_address']);
+                $home_district =  mysqli_real_escape_string($conn,$_POST['home_district']);
+                $home_number =  mysqli_real_escape_string($conn,$_POST['home_number']);
+                $price =  mysqli_real_escape_string($conn,$_POST['price']);
+                $current_image = mysqli_real_escape_string($conn,$_POST['current_image']);
+                $category = mysqli_real_escape_string($conn,$_POST['category']);
+                $featured = mysqli_real_escape_string($conn,$_POST['featured']);
+                $active = mysqli_real_escape_string($conn,$_POST['active']);
 
 
 		

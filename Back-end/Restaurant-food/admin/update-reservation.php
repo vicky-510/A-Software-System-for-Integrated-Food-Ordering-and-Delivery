@@ -105,9 +105,9 @@
 		//echo"clicked";
             
 		//get the value from category form
-		        $id = $_POST['id'];
-                $title = $_POST['title'];
-                $status = $_POST['status'];
+		        $id =  mysqli_real_escape_string($conn,$_POST['id']);
+                $title =  mysqli_real_escape_string($conn,$_POST['title']);
+                $status =  mysqli_real_escape_string($conn,$_POST['status']);
                 
     
 

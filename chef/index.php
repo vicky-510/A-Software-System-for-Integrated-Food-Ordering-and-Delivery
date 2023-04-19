@@ -206,17 +206,18 @@ if(isset($_SESSION['login-chef']))
 		//echo"clicked";
             
 		//get the value from category form
-        $username = $_POST['username'];
-        $pwd1 = md5($_POST['pwd1']);  ///password encryption with md5
-        $name = $_POST['name'];
-        $age = $_POST['age'];
-        $salary_work = $_POST['salary_work'];
-        $salary_function = $_POST['salary_function'];
-        $skills = $_POST['skills'];               
-        $experience = $_POST['experience'];
-        $contact = $_POST['contact'];
-        $email = $_POST['email'];
-        $address = $_POST['address'];
+        $username =  mysqli_real_escape_string($conn,$_POST['username']);
+        $raw_pwd1 = md5($_POST['pwd1']);  ///password encryption with md5
+        $pwd1 = mysqli_real_escape_string($conn,$_POST['raw_pwd1']);  ///password encryption with md5
+        $name =  mysqli_real_escape_string($conn,$_POST['name']);
+        $age =  mysqli_real_escape_string($conn,$_POST['age']);
+        $salary_work =  mysqli_real_escape_string($conn,$_POST['salary_work']);
+        $salary_function =  mysqli_real_escape_string($conn,$_POST['salary_function']);
+        $skills =  mysqli_real_escape_string($conn,$_POST['skills']);               
+        $experience =  mysqli_real_escape_string($conn,$_POST['experience']);
+        $contact =  mysqli_real_escape_string($conn,$_POST['contact']);
+        $email =  mysqli_real_escape_string($conn,$_POST['email']);
+        $address =  mysqli_real_escape_string($conn,$_POST['address']);
 
 
 		

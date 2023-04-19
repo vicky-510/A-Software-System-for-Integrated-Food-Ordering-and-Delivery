@@ -114,10 +114,10 @@
 		//echo"clicked";
             
 		//get the value from category form
-		        $id = $_POST['id'];
-                $food = $_POST['food'];
-                $qty = $_POST['qty'];
-                $status = $_POST['status'];
+		        $id = mysqli_real_escape_string($conn,$_POST['id']);
+                $food = mysqli_real_escape_string($conn,$_POST['food']);
+                $qty = mysqli_real_escape_string($conn,$_POST['qty']);
+                $status = mysqli_real_escape_string($conn,$_POST['status']);
                 
     
 

@@ -170,14 +170,14 @@
 
                 		//get the value from form
 
-                        $title=$_POST['title'];
-                        $description = $_POST['description'];
-                        $home_name=$_POST['rest_name'];
-                        $home_address=$_POST['rest_address'];
-                        $home_district=$_POST['rest_district'];
-                        $home_number=$_POST['rest_number'];
-                        $price=$_POST['price'];
-                        $category_id=$_POST['category_id'];
+                        $title= mysqli_real_escape_string($conn,$_POST['title']);
+                        $description =  mysqli_real_escape_string($conn,$_POST['description']);
+                        $home_name= mysqli_real_escape_string($conn,$_POST['rest_name']);
+                        $home_address= mysqli_real_escape_string($conn,$_POST['rest_address']);
+                        $home_district= mysqli_real_escape_string($conn,$_POST['rest_district']);
+                        $home_number= mysqli_real_escape_string($conn,$_POST['rest_number']);
+                        $price= mysqli_real_escape_string($conn,$_POST['price']);
+                        $category_id= mysqli_real_escape_string($conn,$_POST['category_id']);
                         
 
          //featured
@@ -186,7 +186,7 @@
 		if(isset($_POST['featured'])){
 
 			//get the value from form
-			$featured = $_POST['featured'];
+			$featured =  mysqli_real_escape_string($conn,$_POST['featured']);
 		}
 		else{
 			//set the default value
@@ -200,7 +200,7 @@
 		if(isset($_POST['active'])){
 
 			//get the value from form
-			$active = $_POST['active'];
+			$active =  mysqli_real_escape_string($conn,$_POST['active']);
 		}
 		else{
 			//set the default value

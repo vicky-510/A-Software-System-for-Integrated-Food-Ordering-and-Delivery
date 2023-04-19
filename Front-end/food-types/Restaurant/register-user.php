@@ -173,13 +173,13 @@ if(isset($_POST['submit']))	 {
 //echo"clicked";
 
 //get the value from category form
-   $username = $_POST['username'];
+   $username =  mysqli_real_escape_string($conn, $_POST['username']);
    $pwd = md5($_POST['pwd']);  ///password encryption with md5
-   $cust_name = $_POST['cust_name'];
-   $cust_contact = $_POST['cust_contact'];
-   $cust_email = $_POST['cust_email'];
-   $cust_address = $_POST['cust_address'];
-   $is_pet = $_POST['is_pet'];
+   $cust_name = mysqli_real_escape_string($conn,$_POST['cust_name']);
+   $cust_contact = mysqli_real_escape_string($conn,$_POST['cust_contact']);
+   $cust_email = mysqli_real_escape_string($conn,$_POST['cust_email']);
+   $cust_address = mysqli_real_escape_string($conn,$_POST['cust_address']);
+   $is_pet = mysqli_real_escape_string($conn,$_POST['is_pet']);
    
   
 

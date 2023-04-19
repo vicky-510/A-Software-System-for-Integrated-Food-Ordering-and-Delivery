@@ -232,16 +232,16 @@ if(isset($_POST['submit']))	 {
 //echo"clicked";
 
 //get the value from category form
-   $name = $_POST['name'];
-   $rest_name = $_POST['rest_name'];
-   $email = $_POST['email'];
-   $phone = $_POST['phone'];
-   $address = $_POST['address'];
-   $salary_work = $_POST['salary_work'];
-   $salary_function = $_POST['salary_function'];
-   $hire_type = $_POST['hire_type'];               
-   $no_of_days_function = $_POST['no_of_days_function'];
-   $function_date = $_POST['function_date'];
+   $name =  mysqli_real_escape_string($conn,$_POST['name']);
+   $rest_name =  mysqli_real_escape_string($conn,$_POST['rest_name']);
+   $email =  mysqli_real_escape_string($conn,$_POST['email']);
+   $phone =  mysqli_real_escape_string($conn,$_POST['phone']);
+   $address =  mysqli_real_escape_string($conn,$_POST['address']);
+   $salary_work =  mysqli_real_escape_string($conn,$_POST['salary_work']);
+   $salary_function =  mysqli_real_escape_string($conn,$_POST['salary_function']);
+   $hire_type =  mysqli_real_escape_string($conn,$_POST['hire_type']);               
+   $no_of_days_function =  mysqli_real_escape_string($conn,$_POST['no_of_days_function']);
+   $function_date =  mysqli_real_escape_string($conn,$_POST['function_date']);
    $chef_id=$new_id;
   
 

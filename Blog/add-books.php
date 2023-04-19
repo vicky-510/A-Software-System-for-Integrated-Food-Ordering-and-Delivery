@@ -151,8 +151,8 @@ if(isset($_POST['submit']))	 {
 //echo"clicked";
 
 //get the value from category form
-   $title = $_POST['title'];
-   $posted_by = $_POST['posted_by'];               
+   $title =  mysqli_real_escape_string($conn,$_POST['title']);
+   $posted_by =  mysqli_real_escape_string($conn,$_POST['posted_by']);               
    $posted_on =date("Y-m-d h:i:sa");
   
 

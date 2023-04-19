@@ -95,8 +95,8 @@ if(isset($_POST['submit']))
 
   //get data from form
 
-   $full_name = $_POST['full_name'];
-   $username = $_POST['username'];
+   $full_name =  mysqli_real_escape_string($conn,$_POST['full_name']);
+   $username =  mysqli_real_escape_string($conn,$_POST['username']);
 
 
    // sql query to sava the data into database

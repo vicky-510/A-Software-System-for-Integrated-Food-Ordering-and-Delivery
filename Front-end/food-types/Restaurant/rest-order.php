@@ -134,7 +134,7 @@ ob_start();
     <meta charset="UTF-8">
     <!-- Important to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Website</title>
+    <title>Foodies</title>
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="../../css/style.css">
@@ -337,21 +337,21 @@ ob_start();
 		//echo"clicked";
             
 		//get the value from category form
-                $food = $_POST['food'];
-                $rest_name = $_POST['rest_name'];
-                $rest_address = $_POST['rest_address'];
-                $rest_district = $_POST['rest_district'];
-                $rest_number = $_POST['rest_number'];               
-                $price = $_POST['price'];
-                $qty = $_POST['qty'];
+                $food = mysqli_real_escape_string($conn,$_POST['food']);
+                $rest_name =mysqli_real_escape_string($conn, $_POST['rest_name']);
+                $rest_address = mysqli_real_escape_string($conn,$_POST['rest_address']);
+                $rest_district = mysqli_real_escape_string($conn,$_POST['rest_district']);
+                $rest_number = mysqli_real_escape_string($conn,$_POST['rest_number']);               
+                $price = mysqli_real_escape_string($conn,$_POST['price']);
+                $qty = mysqli_real_escape_string($conn,$_POST['qty']);
                 $total = $price * $qty;
                 $order_date =date("Y-m-d h:i:sa");
                 $status="Ordered"; //ordered, undelivery cancelled 
-                $cust_name = $_POST['order_name'];
-                $cust_contact = $_POST['order_contact'];
-                $cust_email = $_POST['order_email'];
-                $cust_address = $_POST['order_address'];
-                $is_pet = $_POST['order_pet'];
+                $cust_name = mysqli_real_escape_string($conn,$_POST['order_name']);
+                $cust_contact = mysqli_real_escape_string($conn,$_POST['order_contact']);
+                $cust_email = mysqli_real_escape_string($conn,$_POST['order_email']);
+                $cust_address = mysqli_real_escape_string($conn,$_POST['order_address']);
+                $is_pet = mysqli_real_escape_string($conn,$_POST['order_pet']);
                 $user_id = $_POST['order_id'];
 
 

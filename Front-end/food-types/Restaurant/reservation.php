@@ -150,14 +150,14 @@
 
                 		//get the value from form
 
-                        $title=$_POST['title'];
-                        $rest_name = $_POST['rest_name'];
-                        $table_count = $_POST['table_count'];
-                        $time_date = $_POST['time_date'];
-                        $person_count = $_POST['person_count'];
-                        $cust_name=$_POST['cust_name'];
-                        $cust_email=$_POST['cust_email'];
-                        $cust_number=$_POST['cust_number'];
+                        $title=mysqli_real_escape_string($conn,$_POST['title']);
+                        $rest_name =mysqli_real_escape_string($conn, $_POST['rest_name']);
+                        $table_count = mysqli_real_escape_string($conn,$_POST['table_count']);
+                        $time_date = mysqli_real_escape_string($conn,$_POST['time_date']);
+                        $person_count = mysqli_real_escape_string($conn,$_POST['person_count']);
+                        $cust_name=mysqli_real_escape_string($conn,$_POST['cust_name']);
+                        $cust_email=mysqli_real_escape_string($conn,$_POST['cust_email']);
+                        $cust_number=mysqli_real_escape_string($conn,$_POST['cust_number']);
                         $status="Accepted"; //ordered, undelivery cancelled 
 
   
