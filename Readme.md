@@ -20,9 +20,7 @@
 |Team member 1 :| Vishnu chidambaram R| https://www.linkedin.com/in/vishnu-chidambaram-r|
 |Team member 2 :| Balagi P | https://www.linkedin.com/in/balagi-parthasarathy-854b9916a |
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/103897625/225861231-0818dab5-d2ab-419f-97a8-b82500463cbf.gif" width="350" height="350"/>
-</p>
+
 
 ## Project Description:
 An Integrated web application used to order restaurant and home made foods, hire chefs, learn to cook foods through blog, podcasts, etc. This system will makes the food industry very effective.
