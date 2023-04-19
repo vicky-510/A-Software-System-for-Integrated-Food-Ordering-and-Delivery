@@ -1,5 +1,5 @@
 
-# Haversine formula
+Haversine formula:
 
     The formula used in the code is the Haversine formula, which is a formula that calculates the great-circle distance between two points on a sphere (such as the Earth). The Haversine formula takes into account the curvature of the Earth's surface, making it more accurate than simpler methods that assume a flat Earth.
 
