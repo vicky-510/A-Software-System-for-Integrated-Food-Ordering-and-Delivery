@@ -1,6 +1,6 @@
 <?php 
 
-      include('../../config/constants.php'); 
+      include('partials/constants.php'); 
       include('partials/login-check.php');
 
 ?>
@@ -8,7 +8,7 @@
 <br>
 <br>
 <div class="login-box">
-  <h2>Update Train order</h2>
+  <h2>Update Train Delivery</h2>
   <br>
   <?php
           if(isset($_GET['id']))
@@ -147,7 +147,7 @@
 	        $_SESSION['update'] = "<div class='success'>Train Order Updated Successfully   <strong>X</strong></div>";
 	 
 	         //redirect to manage admin
-	         header("location:".SITEURL.'Back-end/Restaurant-food/admin/manage-train.php');
+             header('location:'.SITEURL.'Delivery/Restaurant/train-order.php');
 
              }else{
              //echo "not inserted";
@@ -155,7 +155,7 @@
 	         $_SESSION['update'] = "<div class='error'>Failed to  Update Train order    <strong>X</strong></div>";
 	 
 	         //redirect to manage admin
-	          header("location:".SITEURL.'Back-end/Restaurant-food/admin/manage-train.php');
+             header('location:'.SITEURL.'Delivery/Restaurant/train-order.php');
 
              }
 

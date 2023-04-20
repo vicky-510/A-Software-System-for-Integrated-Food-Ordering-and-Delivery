@@ -11,7 +11,7 @@
 
    <div class="main-content ">
     <div class="wrapper2">
-    <h2 style="margin-left:30px; color:navy; font-weight:bold; margin-bottom:10px;">Manage Order</h2>
+    <h2 style="margin-left:30px; color:navy; font-weight:bold; margin-bottom:10px;">Manage Train  Order</h2>
                   <!-- Button to add admin-->
                   </br>
                   </br>
@@ -35,10 +35,9 @@
                     <table class="tbl-full">
                         <tr>
                           <th>S.No</th>
-                          <th>Food and <br>Restaurant<br>details</th>
-                          <th>Total</th>
-                          <th>Order date and<br>Status</th>
-                          <th>Customer details</th>
+                          <th>Food details and status</th>
+                          <th>Train and <br>Restaurant<br>details</th>
+                          <th>Customer details </th>
                           <th>Actions</th>
 
 
@@ -46,7 +45,7 @@
                             
                             //Query to get all the data in category_rest table
 
-                           $sql = "SELECT * FROM basket_home ORDER BY id DESC";
+                           $sql = "SELECT * FROM train_service ORDER BY id DESC";
 
                            //execute the query
                            $res = mysqli_query($conn, $sql);
@@ -69,20 +68,16 @@
                                   //get individual data
                                    $id=$rows['id'];
                                    $food=$rows['food'];
-                                   $home_name=$rows['home_name'];
-                                   $home_address=$rows['home_address'];
-                                   $home_district=$rows['home_district'];
-                                   $home_number=$rows['home_number'];
-                                   $price=$rows['price'];
                                    $qty=$rows['qty'];
-                                   $total=$rows['total'];
+                                   $train_name=$rows['train_name'];
+                                   $train_url=$rows['train_url'];
+                                   $rest_name=$rows['rest_name'];
+                                   $rest_url=$rows['rest_url'];
                                    $order_date=$rows['order_date'];
                                    $status=$rows['status'];
                                    $cust_name=$rows['cust_name'];
-                                   $cust_contact=$rows['cust_contact'];
                                    $cust_email=$rows['cust_email'];
-                                   $cust_address=$rows['cust_address'];
-                                   $is_pet=$rows['is_pet'];
+                                   $cust_number=$rows['cust_number'];
                                    $order_taken=$rows['order_taken'];
 
                               
@@ -95,51 +90,47 @@
                         <tr>
                         <td><?php echo $sn++; ?>.</td>
                           <td>
-                                <span><?php echo "<div class='f-details3'>Food : ".$food."</div>"; ?></span><br>
-                                <span><?php echo "<div class='f-details1'>Home name: <br>".$home_name.",</div>"; ?></span><br>
-                                <span><?php echo "<div class='f-details2'>Home address :<br> ".$home_address."</div>"; ?><span><br>
-                                <span><?php echo "<div class='f-details3'>Home district :<br> ".$home_district."</div>"; ?></span><br>
-                                <span><?php echo "<div class='f-4'>Home Mobile number : <br>".$home_number.".</div>"; ?></span><br>
-                          </td>
-                          <td>
-                                 <span><?php echo "Price:<br> ".$price."</div>"; ?></span><br><br>
-                                <span><?php echo "Quantity:<br>".$qty."</div>"; ?><span><br><br>
-                                <span><?php echo "Total Price: ".$total."</div>"; ?></span><br>
-
-                          </td>
-                          <td >
-                          <span><?php echo $order_date; ?></span><br><br>
-                          <span>
+                                <span><?php echo "Food :<br> ".$food; ?></span><br><br>
+                                <span><?php echo "Quantity: ".$qty; ?></span><br><br>
+                                <span><?php echo "<div class='f-details2'>Ordered date : ".$order_date."</div>"; ?>
+                               <br><br>
+                                <span>
                            <?php 
                                      //ordered, delivered,on delivery, csncelled
                                      if($status==="Ordered"){
-                                       echo "<label style='color:#48dbfb;'>$status</label>";
+                                       echo "Status:<label style='color:#48dbfb;'> $status</label>";
                                      }
                                      elseif($status=="On Delivery"){
-                                       echo "<label style='color:#ffa801;'>$status</label>";
+                                       echo "Status:<label style='color:#ffa801;'> $status</label>";
 
                                      }
                                      elseif($status=="Delivered"){
-                                       echo "<label style='color:#32ff7e;'>$status</label>";
+                                       echo "Status:<label style='color:#32ff7e;'>$status</label>";
                                      }
                                      elseif($status=="Cancelled"){
-                                       echo "<label style='color:red;'>$status</label>";
+                                       echo "Status:<label style='color:red;'> $status</label>";
                                      }
                            
                            ?></span><br><br>
-                           <span><?php echo "Order taken to<br> delivery by:<br> ".$order_taken."</div>"; ?></span><br>
-
+                           
+                                   <span><?php echo "<div class='f-details2'>Order taken<br> to delivery by :<br> ".$order_taken."</div>"; ?>
+                                   <br><br>
+                                 </td>
+                          <td>
+                                 <span><?php echo "<div class='f-details1'>Train Name : ".$train_name."</div>"; ?></span><br>
+                                 <a href="<?php echo $train_url;?>"> <span><?php echo "<div class='f-details2'>Train Url: <br>".$train_url.",</div>"; ?></span></a><br>
+                                <span><?php echo "<div class='f-details3'>Restaurant Name : ".$rest_name."</div>"; ?></span><br>
+                                <a href="<?php echo $rest_url;?>"><span><?php echo "<div class='f-4'>Restaurant Url: <br>".$rest_url.",</div>"; ?></span></a><br>
+                                
                           </td>
-
                           <td><span><?php echo "<div class='f-details1'>Customer name: <br>".$cust_name.",</div>"; ?></span><br>
                           <a href="mailto:<?php echo $cust_email;?>"><span><?php echo "<div class='f-details2'>Customer email : <br>".$cust_email.",</div>"; ?><span></a> <br>
-                                <span><?php echo "<div class='f-details3'>Customer address : <br>".$cust_address.",</div>"; ?></span><br>
-                                <span><?php echo "<div class='f-4'>Customer Mobile number : <br>".$cust_contact.",</div>"; ?></span><br>
-                                <span><?php echo "<div class='f-details2'>Pet (dog) : ".$is_pet.".</div>"; ?></span><br>
-
+                                <span><?php echo "<div class='f-4'>Customer Mobile number : <br>".$cust_number.",</div>"; ?></span><br>
+                               
                            </td>
+                          
                            <td>
-                           <span> <a href="<?php echo SITEURL; ?>Back-end/Home-food/admin/update-order.php?id=<?php echo $id; ?>" class="btn-secondary1" style="margin;0px">Update Order</a></span>
+                           <span> <a href="<?php echo SITEURL; ?>Delivery/Restaurant/update-train.php?id=<?php echo $id; ?>" class="btn-secondary1" >Accept Delivery</a></span>
                                        
                            <?php
 
@@ -155,7 +146,7 @@
                            ?>
 
                              <tr>
-                             <td>  <div class="error">No Order placed    <strong>X</strong></div></td>
+                             <td>  <div class="error">No Order Placed    <strong>X</strong></div></td>
                               </tr>
 
                                  <?php

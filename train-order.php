@@ -46,13 +46,22 @@ ob_start();
                     <a href="<?php echo SITEURL; ?>Recipies.php">Blog</a>
                     </li>
                     
-                
-                    <a href="<?php echo SITEURL; ?>Back-end/Restaurant-food/admin/login-rest.php"><button class="button" 
+                    <li>
+                    <a href="<?php echo SITEURL; ?>Delivery/Restaurant/login-rest.php"><button class="button" 
                         style=" background-color: #182C61; 
                             color: rgb(255, 255, 255); 
                             padding: 12px 24px;
-                            border-radius: 5px; margin-left: 20px;">Login</button></a>
+                            border-radius: 5px; margin-left: 20px;">Rest Delivery Login</button></a>
                     </li>
+                    <li>
+                
+                    <a href="<?php echo SITEURL; ?>Delivery/Home-made/login-home.php"><button class="button" 
+                        style=" background-color: #182C61; 
+                            color: rgb(255, 255, 255); 
+                            padding: 12px 24px;
+                            border-radius: 5px; margin-left: 20px;">Home Delivery Login</button></a>
+                                        </li>
+
                 </ul>
             </div>
 

@@ -39,6 +39,8 @@
                 $food = $row['food'];
                 $qty=$row['qty'];
                 $status=$row['status'];
+                $order_taken=$row['order_taken'];
+
 
             }else{
 
@@ -71,6 +73,10 @@
     <label>Quantity :</label>
   
 </div>
+<div class="user-box">
+  <input type="text" name="order_taken" value="<?php echo $order_taken?>">
+    <label>Order Taken (Delivery boy name with phone no) :</label>
+  </div>
 <div class="user-box">
   <label>Status:</label>
   <br>
@@ -118,6 +124,8 @@
                 $food = mysqli_real_escape_string($conn,$_POST['food']);
                 $qty = mysqli_real_escape_string($conn,$_POST['qty']);
                 $status = mysqli_real_escape_string($conn,$_POST['status']);
+                $order_taken = mysqli_real_escape_string($conn,$_POST['order_taken']);
+
                 
     
 
@@ -126,6 +134,7 @@
 		
                     food='$food',
                     qty='$qty',
+                    order_taken='$order_taken',
                     status='$status' WHERE id ='$id'
 		          ";
 

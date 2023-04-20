@@ -11,7 +11,7 @@
 
    <div class="main-content ">
     <div class="wrapper2">
-    <h2 style="margin-left:30px; color:navy; font-weight:bold; margin-bottom:10px;">Manage Order</h2>
+    <h2 style="margin-left:30px; color:navy; font-weight:bold; margin-bottom:10px;">Manage Delivery</h2>
                   <!-- Button to add admin-->
                   </br>
                   </br>
@@ -32,7 +32,7 @@
                   </br>
             
     
-                    <table class="tbl-full">
+                  <table class="tbl-full">
                         <tr>
                           <th>S.No</th>
                           <th>Food and <br>Restaurant<br>details</th>
@@ -139,7 +139,7 @@
 
                            </td>
                            <td>
-                           <span> <a href="<?php echo SITEURL; ?>Back-end/Home-food/admin/update-order.php?id=<?php echo $id; ?>" class="btn-secondary1" style="margin;0px">Update Order</a></span>
+                           <span> <a href="<?php echo SITEURL; ?>Delivery/Home-made/update-delivery.php?id=<?php echo $id; ?>" class="btn-secondary1" style="margin;0px">Update Delivery</a></span>
                                        
                            <?php
 
@@ -157,7 +157,6 @@
                              <tr>
                              <td>  <div class="error">No Order placed    <strong>X</strong></div></td>
                               </tr>
-
                                  <?php
 
 

@@ -177,6 +177,8 @@
                                    $order_address=$rows['cust_address'];
                                    $order_pet=$rows['is_pet'];
                                    $order_id=$rows['user_id'];
+                                   $order_taken=$rows['order_taken'];
+
 
                               
 
@@ -212,6 +214,8 @@
                         <input type="hidden" name="order_address" value="<?php echo $order_address?>">
                         <input type="hidden" name="order_pet" value="<?php echo $order_pet?>">
                         <input type="hidden" name="order_id" value="<?php echo $order_id?>">
+                        <input type="hidden" name="order_taken" value="<?php echo $order_taken?>">
+
 
 
                     </span>
@@ -253,10 +257,12 @@
                                      }
                            
                            ?>
-                    
+                       
                     <!---<a href="#"><input type="submit" name="check" value="Check out" class="btn btn-primary1"></a>  -->
 
-                    </span ><br> 
+                    </span ><br>
+                    <span style="color:Navy; background-color:violet; padding:4px 8px; border-radius:5px;">Order taken to <br>Delivery By:<br> <?php echo $order_taken;?></span>
+ 
                     
                     
                     </td>

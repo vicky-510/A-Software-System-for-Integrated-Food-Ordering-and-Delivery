@@ -11,7 +11,7 @@
 
    <div class="main-content ">
     <div class="wrapper2">
-    <h2 style="margin-left:30px; color:navy; font-weight:bold; margin-bottom:10px;">Manage Order</h2>
+    <h2 style="margin-left:30px; color:navy; font-weight:bold; margin-bottom:10px;">Manage Delivery</h2>
                   <!-- Button to add admin-->
                   </br>
                   </br>
@@ -38,7 +38,7 @@
                           <th>Food and <br>Restaurant<br>details</th>
                           <th>Total</th>
                           <th>Order date and<br>Status</th>
-                          <th>Customer details</th>
+                          <th>Customer<br> details</th>
                           <th>Actions</th>
 
 
@@ -46,7 +46,7 @@
                             
                             //Query to get all the data in category_rest table
 
-                           $sql = "SELECT * FROM basket_home ORDER BY id DESC";
+                           $sql = "SELECT * FROM basket_rest ORDER BY id DESC";
 
                            //execute the query
                            $res = mysqli_query($conn, $sql);
@@ -69,10 +69,10 @@
                                   //get individual data
                                    $id=$rows['id'];
                                    $food=$rows['food'];
-                                   $home_name=$rows['home_name'];
-                                   $home_address=$rows['home_address'];
-                                   $home_district=$rows['home_district'];
-                                   $home_number=$rows['home_number'];
+                                   $rest_name=$rows['rest_name'];
+                                   $rest_address=$rows['rest_address'];
+                                   $rest_district=$rows['rest_district'];
+                                   $rest_number=$rows['rest_number'];
                                    $price=$rows['price'];
                                    $qty=$rows['qty'];
                                    $total=$rows['total'];
@@ -85,7 +85,6 @@
                                    $is_pet=$rows['is_pet'];
                                    $order_taken=$rows['order_taken'];
 
-                              
 
                                    ?>
 
@@ -96,10 +95,10 @@
                         <td><?php echo $sn++; ?>.</td>
                           <td>
                                 <span><?php echo "<div class='f-details3'>Food : ".$food."</div>"; ?></span><br>
-                                <span><?php echo "<div class='f-details1'>Home name: <br>".$home_name.",</div>"; ?></span><br>
-                                <span><?php echo "<div class='f-details2'>Home address :<br> ".$home_address."</div>"; ?><span><br>
-                                <span><?php echo "<div class='f-details3'>Home district :<br> ".$home_district."</div>"; ?></span><br>
-                                <span><?php echo "<div class='f-4'>Home Mobile number : <br>".$home_number.".</div>"; ?></span><br>
+                                <span><?php echo "<div class='f-details1'>Restaurant name: <br>".$rest_name.",</div>"; ?></span><br>
+                                <span><?php echo "<div class='f-details2'>Restaurant address :<br> ".$rest_address."</div>"; ?><span><br>
+                                <span><?php echo "<div class='f-details3'>Restaurant district :<br> ".$rest_district."</div>"; ?></span><br>
+                                <span><?php echo "<div class='f-4'>Restaurant Mobile number : <br>".$rest_number.".</div>"; ?></span><br>
                           </td>
                           <td>
                                  <span><?php echo "Price:<br> ".$price."</div>"; ?></span><br><br>
@@ -127,8 +126,7 @@
                                      }
                            
                            ?></span><br><br>
-                           <span><?php echo "Order taken to<br> delivery by:<br> ".$order_taken."</div>"; ?></span><br>
-
+                           <span> Order taken to <br>delivery by:<br><?php echo $order_taken; ?></span>
                           </td>
 
                           <td><span><?php echo "<div class='f-details1'>Customer name: <br>".$cust_name.",</div>"; ?></span><br>
@@ -139,7 +137,7 @@
 
                            </td>
                            <td>
-                           <span> <a href="<?php echo SITEURL; ?>Back-end/Home-food/admin/update-order.php?id=<?php echo $id; ?>" class="btn-secondary1" style="margin;0px">Update Order</a></span>
+                           <span> <a href="<?php echo SITEURL; ?>Delivery/Restaurant/update-delivery.php?id=<?php echo $id; ?>" class="btn-secondary1" style="margin- ">Accept Delivery</a></span>
                                        
                            <?php
 
@@ -155,7 +153,7 @@
                            ?>
 
                              <tr>
-                             <td>  <div class="error">No Order placed    <strong>X</strong></div></td>
+                             <td>  <div class="error">No Order Added    <strong>X</strong></div></td>
                               </tr>
 
                                  <?php

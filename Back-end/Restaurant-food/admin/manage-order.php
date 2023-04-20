@@ -83,7 +83,8 @@
                                    $cust_email=$rows['cust_email'];
                                    $cust_address=$rows['cust_address'];
                                    $is_pet=$rows['is_pet'];
-                              
+                                   $order_taken=$rows['order_taken'];
+
 
                                    ?>
 
@@ -124,7 +125,9 @@
                                        echo "<label style='color:red;'>$status</label>";
                                      }
                            
-                           ?></span>
+                           ?></span><br><br>
+                        <span> Order taken to <br>delivery by:<br><?php echo $order_taken; ?></span>
+
                           </td>
 
                           <td><span><?php echo "<div class='f-details1'>Customer name: <br>".$cust_name.",</div>"; ?></span><br>

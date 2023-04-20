@@ -78,7 +78,8 @@
                                    $cust_name=$rows['cust_name'];
                                    $cust_email=$rows['cust_email'];
                                    $cust_number=$rows['cust_number'];
-                                   
+                                   $order_taken=$rows['order_taken'];
+
                               
 
                                    ?>
@@ -111,6 +112,8 @@
                                      }
                            
                            ?></span><br><br>
+                                   <span><?php echo "<div class='f-details2'>Order taken<br> to delivery by :<br> ".$order_taken."</div>"; ?>
+
                                  </td>
                           <td>
                                  <span><?php echo "<div class='f-details1'>Train Name : ".$train_name."</div>"; ?></span><br>

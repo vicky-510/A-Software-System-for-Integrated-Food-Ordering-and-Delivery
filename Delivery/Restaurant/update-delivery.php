@@ -1,14 +1,14 @@
 <?php 
 
-      include('../../config/constants.php'); 
-     include('partials/login-check.php');
+      include('partials/constants.php'); 
+      include('partials/login-check.php');
 
 ?>
 <br>
 <br>
 <br>
 <div class="login-box">
-  <h2>Update Order</h2>
+  <h2>Update Delivery</h2>
   <br>
   <?php
           if(isset($_GET['id']))
@@ -17,7 +17,7 @@
           $id = $_GET['id'];
 
           //create a sql query to get the details
-          $sql = "SELECT * FROM basket_home WHERE id=$id";
+          $sql = "SELECT * FROM basket_rest WHERE id=$id";
 
 
           //execute the query
@@ -47,15 +47,15 @@
               $_SESSION['no-category-found'] = "<div class='error'>No Order found    <strong>X</strong></div>";
 
                 //redirect to manage Admin page
-                header('location:'.SITEURL.'Back-end/Home-food/admin/manage-order.php');
+                header('location:'.SITEURL.'Delivery/Restaurant/index.php');
             }
 
           }
         }
         else{
             //redirect to manage Admin page
-            header('location:'.SITEURL.'Back-end/Home-food/admin/manage-order.php');
-        }
+            header('location:'.SITEURL.'Delivery/Restaurant/index.php');
+          }
        ?>
 
 
@@ -75,9 +75,8 @@
 </div>
 <div class="user-box">
   <input type="text" name="order_taken" value="<?php echo $order_taken?>">
-    <label>Order taken (Delivery boy name with phone number) :</label>
+    <label>Order Taken (Delivery boy name with phone no) :</label>
   </div>
-  <div class="user-box ">
 <div class="user-box">
   <label>Status:</label>
   <br>
@@ -100,7 +99,7 @@
 <input type="hidden" name="id" value="<?php echo $id; ?>">
   <button class="btn-primary1" type="submit" name="submit">SUBMIT</button>
 
-  <a href="<?php echo SITEURL; ?>Back-end/Home-food/admin/manage-order.php" style="margin-left:93px;">
+  <a href="<?php echo SITEURL; ?>Delivery/Restaurant/index.php" style="margin-left:93px;">
 
     <span></span>
     <span></span>
@@ -121,7 +120,7 @@
 		//echo"clicked";
             
 		//get the value from category form
-		        $id = mysqli_real_escape_string($conn,$_POST['id']);
+		            $id = mysqli_real_escape_string($conn,$_POST['id']);
                 $food = mysqli_real_escape_string($conn,$_POST['food']);
                 $qty = mysqli_real_escape_string($conn,$_POST['qty']);
                 $status = mysqli_real_escape_string($conn,$_POST['status']);
@@ -131,7 +130,7 @@
     
 
 		//create a sql to insert category into database
-		      $sql2="UPDATE basket_home SET 
+		      $sql2="UPDATE basket_rest SET 
 		
                     food='$food',
                     qty='$qty',
@@ -149,18 +148,18 @@
 			//query execute and category added
 			 //echo "inserted";
 	        //create a session variable to display msg
-	        $_SESSION['update'] = "<div class='success'>Order Updated Successfully   <strong>X</strong></div>";
+	        $_SESSION['update'] = "<div class='success'>Delivery Updated Successfully   <strong>X</strong></div>";
 	 
 	         //redirect to manage admin
-	         header("location:".SITEURL.'Back-end/Home-food/admin/manage-order.php');
+           header('location:'.SITEURL.'Delivery/Restaurant/index.php');
 
              }else{
              //echo "not inserted";
 	         //create a session variable to display msg
-	         $_SESSION['update'] = "<div class='error'>Failed to  Update Food    <strong>X</strong></div>";
+	         $_SESSION['update'] = "<div class='error'>Failed to  Update Delivery    <strong>X</strong></div>";
 	 
 	         //redirect to manage admin
-	          header("location:".SITEURL.'Back-end/Home-food/admin/manage-order.php');
+           header('location:'.SITEURL.'Delivery/Restaurant/index.php');
 
              }
 
