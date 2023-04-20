@@ -21,6 +21,10 @@
 |Team member 2 :| Balagi P | https://www.linkedin.com/in/balagi-parthasarathy-854b9916a |
 
 
+## System Model Design
+
+![architecture diagram](https://user-images.githubusercontent.com/103897625/233459918-1df51789-e437-4fd4-9d65-97572f6e4c68.png)
+
 
 ## Project Description:
 An Integrated web application used to order restaurant and home made foods, hire chefs, learn to cook foods through blog, podcasts, etc. This system will makes the food industry very effective.
