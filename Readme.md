@@ -21,7 +21,7 @@
 |Team member 2 :| Balagi P | https://www.linkedin.com/in/balagi-parthasarathy-854b9916a |
 
 
-## System Model Design
+## System Model Design:
 
 ![architecture diagram](https://user-images.githubusercontent.com/103897625/233459918-1df51789-e437-4fd4-9d65-97572f6e4c68.png)
 
