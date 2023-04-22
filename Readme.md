@@ -33,7 +33,7 @@ An Integrated web application used to order restaurant and home made foods, hire
 
 ![Tux, the Linux mascot](https://img.icons8.com/color/48/40C057/html-5--v1.png)   ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/css3.png) ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/javascript.png) ![Tux, the Linux mascot]( https://img.icons8.com/color/48/000000/php.png) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/bootstrap.png)  ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/mysql.png)  ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/firebase.png) 
 
-    HTML, CSS, Java Script, IBM Cloud Object Storage, Python-Flask, Kubernetes, Docker, IBM DB2, IBM Container Registry
+    HTML, CSS, Java Script, Bootstrap, Php, Mysql, Firebase
  
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vwaran)
