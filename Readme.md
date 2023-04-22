@@ -52,7 +52,7 @@ To run this Project you need to first download and install the following Require
 ### Requirements
 
 * Download and Install any local web server such as __XAMPP__.
-* Download the provided source code zip file by simply cop and paste it in any web browser.
+* Download the provided source code zip file by simply copy and paste it in any web browser.
 ```
 https://github.com/vicky-510/A-Software-System-for-Integrated-Food-Ordering-and-Delivery/archive/refs/heads/master.zip
 ```
