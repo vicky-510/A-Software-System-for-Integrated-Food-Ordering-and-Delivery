@@ -43,7 +43,7 @@ Project is created with:
 
 ![Tux, the Linux mascot](https://img.icons8.com/color/48/40C057/html-5--v1.png)   ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/css3.png) ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/javascript.png) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/php.png) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/bootstrap.png)  ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/mysql.png) 
 
-    HTML, CSS, Java Script, Bootstrap, Php, Mysql
+    HTML, CSS, Java Script, Bootstrap, Php, MySQL
  
  
  ## Setup
