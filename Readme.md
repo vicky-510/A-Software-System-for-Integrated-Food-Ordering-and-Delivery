@@ -79,7 +79,7 @@ https://github.com/vicky-510/A-Software-System-for-Integrated-Food-Ordering-and-
 
 ## Support
 
-For support, email vignesh510510@gmail.com or join our Slack channel.
+For support, email vignesh510510@gmail.com or join our Telegram Group.
 
 
 
