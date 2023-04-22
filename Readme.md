@@ -31,9 +31,9 @@ An Integrated web application used to order restaurant and home made foods, hire
 
 ## Skills Used :
 
-![Tux, the Linux mascot](https://img.icons8.com/color/48/40C057/html-5--v1.png)   ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/css3.png) ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/javascript.png) ![Tux, the Linux mascot](https://www.php.net/images/logos/new-php-logo.svg) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/bootstrap.png)  ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/mysql.png)  ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/firebase.png) 
+![Tux, the Linux mascot](https://img.icons8.com/color/48/40C057/html-5--v1.png)   ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/css3.png) ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/javascript.png) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/php.png) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/bootstrap.png)  ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/mysql.png) 
 
-    HTML, CSS, Java Script, Bootstrap, Php, Mysql, Firebase
+    HTML, CSS, Java Script, Bootstrap, Php, Mysql
  
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vwaran)
