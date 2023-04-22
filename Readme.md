@@ -21,19 +21,52 @@
 |Team member 2 :| Balagi P | https://www.linkedin.com/in/balagi-parthasarathy-854b9916a |
 
 
-## System Model Design:
+## Table of contents
+* [Project Description](#project-description)
+* [System Architecture](#system-architecture)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+
+
+## Project Description:
+An Integrated web application used to order restaurant and home made foods, hire chefs, learn to cook foods through blog, podcasts, etc. This system will makes the food industry very effective.	
+
+	
+## System Architecture:
 
 ![architecture diagram](https://user-images.githubusercontent.com/103897625/233459918-1df51789-e437-4fd4-9d65-97572f6e4c68.png)
 
 
-## Project Description:
-An Integrated web application used to order restaurant and home made foods, hire chefs, learn to cook foods through blog, podcasts, etc. This system will makes the food industry very effective.
-
-## Skills Used :
+## Technologies
+Project is created with:
 
 ![Tux, the Linux mascot](https://img.icons8.com/color/48/40C057/html-5--v1.png)   ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/css3.png) ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/javascript.png) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/php.png) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/bootstrap.png)  ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/mysql.png) 
 
     HTML, CSS, Java Script, Bootstrap, Php, Mysql
+ 
+ 
+ ## Setup
+To run this Project you need to first download and install the following Requirements given below:
+
+### Requirements
+
+* Download and Install any local web server such as __XAMPP__.
+* Download the provided source code zip file by simply cop and paste it in any web browser.
+```
+https://github.com/vicky-510/A-Software-System-for-Integrated-Food-Ordering-and-Delivery/archive/refs/heads/master.zip
+```
+## System Installation:
+
+* Open your XAMPP Control Panel and start __Apache__ and __MySQL__.
+* Extract the downloaded source code zip file.
+* Copy the extracted source code folder and paste it into the XAMPP's __"htdocs"__ directory.
+* Browse the __PHPMyAdmin__ in a browser. i.e. __http://localhost/phpmyadmin__
+* Create a new database naming __foodies__.
+* Import the provided SQL file. The file is known as __foodies.sql__ located above the hire_chef.php file.
+* Browse the Software System for Integrated Food Ordering and Delivery in a browser. i.e. __http://localhost/foodies__.
+
+ 
  
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vwaran)
@@ -41,7 +74,6 @@ An Integrated web application used to order restaurant and home made foods, hire
 
 
 ## Author
-
 - [@Vigneshwaran M](https://www.github.com/vicky-510)
 
 
