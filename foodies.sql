@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2023 at 07:29 AM
+-- Generation Time: Apr 24, 2023 at 02:45 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -61,7 +61,7 @@ CREATE TABLE `admin_rest` (
 --
 
 INSERT INTO `admin_rest` (`id`, `full_name`, `username`, `pwd`) VALUES
-(35, 'VigneshWaran M', 'Vicky_510', '0d0b3b487d310e0fd048dcdfc7bc7b69'),
+(35, 'VigneshWaran M', 'Vicky_5100', '0d0b3b487d310e0fd048dcdfc7bc7b69'),
 (36, 'Vishnu chidambaram', 'vishnu-hero', '9baea88a52d949f8f2680b0c1c922552'),
 (43, 'Vicky', 'vicky510', '24bb329e3f4253b5788baea1ff097cb5'),
 (46, 'balagi p', 'radi', '52e8d51dfc775b1b3dfc838871e8bb0d');
@@ -89,21 +89,23 @@ CREATE TABLE `basket_home` (
   `cust_email` varchar(150) NOT NULL,
   `cust_address` varchar(255) NOT NULL,
   `is_pet` varchar(50) NOT NULL,
-  `user_id` int(11) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `order_taken` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `basket_home`
 --
 
-INSERT INTO `basket_home` (`id`, `food`, `home_name`, `home_address`, `home_district`, `home_number`, `price`, `qty`, `total`, `order_date`, `status`, `cust_name`, `cust_contact`, `cust_email`, `cust_address`, `is_pet`, `user_id`) VALUES
-(13, 'Spicy pasta ', 'Sundari K', '20/7, srinagar street,', ' koripalayam , Madurai-20', '8632147020', '200.00', 6, '1200.00', '2023-04-18 04:15:28', 'Cancelled', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2),
-(14, 'Kiwi Juice', 'Eswari M', '8/3, vinayagar kovil street,', 'k.pudur,Madurai-7', '9876542130', '50.00', 5, '250.00', '2023-04-18 04:16:13', 'Delivered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2),
-(15, 'Chicken cutlet (6Pcs)', 'Kiruthika', '10/13, viveka nanada street,', 'Near anna bus stand, Thiruchendoor', '8596743214', '299.00', 3, '897.00', '2023-04-18 04:16:33', 'Ordered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2),
-(16, 'Cup cake (5 Pcs)', 'Krishnapriya K', '60/3, Achariya Nagar, ', 'Tnagar , chennai', '8594671302', '50.00', 8, '400.00', '2023-04-18 04:17:47', 'On Delivery', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2),
-(17, 'Chapathi (4 Pcs)', 'Ramya gouda S', '10/5, valluvar street,', 'near dravid bus stop , Coimbatore-2', '6352419874', '60.00', 2, '120.00', '2023-04-18 04:18:21', 'Ordered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2),
-(18, 'Chicken cutlet (6Pcs)', 'Kiruthika', '10/13, viveka nanada street,', 'Near anna bus stand, Thiruchendoor', '8596743214', '299.00', 8, '2392.00', '2023-04-18 04:19:53', 'On Delivery', 'Balagi p', '9876543210', 'balagi23@gmail.com', 'Alanganallur, Madurai-9', 'No', 1),
-(19, 'Kiwi Juice', 'Eswari M', '8/3, vinayagar kovil street,', 'k.pudur,Madurai-7', '9876542130', '50.00', 10, '500.00', '2023-04-18 04:20:23', 'On Delivery', 'Balagi p', '9876543210', 'balagi23@gmail.com', 'Alanganallur, Madurai-9', 'No', 1);
+INSERT INTO `basket_home` (`id`, `food`, `home_name`, `home_address`, `home_district`, `home_number`, `price`, `qty`, `total`, `order_date`, `status`, `cust_name`, `cust_contact`, `cust_email`, `cust_address`, `is_pet`, `user_id`, `order_taken`) VALUES
+(13, 'Spicy pasta ', 'Sundari K', '20/7, srinagar street,', ' koripalayam , Madurai-20', '8632147020', '200.00', 6, '1200.00', '2023-04-18 04:15:28', 'Cancelled', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2, ''),
+(14, 'Kiwi Juice', 'Eswari M', '8/3, vinayagar kovil street,', 'k.pudur,Madurai-7', '9876542130', '50.00', 5, '250.00', '2023-04-18 04:16:13', 'Delivered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2, 'Rajesh(8765432100)'),
+(15, 'Chicken cutlet (6Pcs)', 'Kiruthika', '10/13, viveka nanada street,', 'Near anna bus stand, Thiruchendoor', '8596743214', '299.00', 3, '897.00', '2023-04-18 04:16:33', 'Ordered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2, ''),
+(16, 'Cup cake (5 Pcs)', 'Krishnapriya K', '60/3, Achariya Nagar, ', 'Tnagar , chennai', '8594671302', '50.00', 8, '400.00', '2023-04-18 04:17:47', 'Ordered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2, ''),
+(17, 'Chapathi (4 Pcs)', 'Ramya gouda S', '10/5, valluvar street,', 'near dravid bus stop , Coimbatore-2', '6352419874', '60.00', 2, '120.00', '2023-04-18 04:18:21', 'On Delivery', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2, 'Balagi(9876543213)'),
+(18, 'Chicken cutlet (6Pcs)', 'Kiruthika', '10/13, viveka nanada street,', 'Near anna bus stand, Thiruchendoor', '8596743214', '299.00', 8, '2392.00', '2023-04-18 04:19:53', 'On Delivery', 'Balagi p', '9876543210', 'balagi23@gmail.com', 'Alanganallur, Madurai-9', 'No', 1, 'Rajesh(8765432100)'),
+(19, 'Kiwi Juice', 'Eswari M', '8/3, vinayagar kovil street,', 'k.pudur,Madurai-7', '9876542130', '50.00', 10, '500.00', '2023-04-18 04:20:23', 'Ordered', 'Balagi p', '9876543210', 'balagi23@gmail.com', 'Alanganallur, Madurai-9', 'No', 1, ''),
+(20, 'Chicken wings (5 Pcs)', 'Divya R', '20/6, viveka nanada street,', 'kelpaakam , chennai', '9685327415', '300.00', 8, '2400.00', '2023-04-19 08:21:01', 'Delivered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11 ganapathy servai street, k.pudur, madurai-7', 'Yes', 2, 'Balagi(9876543213)');
 
 -- --------------------------------------------------------
 
@@ -128,23 +130,25 @@ CREATE TABLE `basket_rest` (
   `cust_email` varchar(200) NOT NULL,
   `cust_address` varchar(200) NOT NULL,
   `is_pet` varchar(20) NOT NULL,
-  `user_id` int(11) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `order_taken` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `basket_rest`
 --
 
-INSERT INTO `basket_rest` (`id`, `food`, `rest_name`, `rest_address`, `rest_district`, `rest_number`, `price`, `qty`, `total`, `order_date`, `status`, `cust_name`, `cust_contact`, `cust_email`, `cust_address`, `is_pet`, `user_id`) VALUES
-(12, 'Briyani', 'DINDIGUL THALAPAAKATTY', '3/11 dindigul junction', 'Dindigul', '9516341789', '299.00', 9, '2691.00', '2023-04-17 08:50:19', 'Delivered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2),
-(18, 'Venilla Ice Cream', 'ARUN ICE CREAM', 'South veli street,', 'Madurai', '7539518523', '30.00', 6, '120.00', '2023-04-18 06:37:39', 'On Delivery', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2),
-(19, 'Shell Soup', 'ASIAN SEA FOODS', '3/40, Vivekananda street,', 'Rameeswaram', '7365412089', '399.00', 3, '1197.00', '2023-04-18 06:58:55', 'Delivered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2),
-(20, 'Waffle with fruits', 'THAI STREET FOOD', '60, kodambakkam main road,', 'Chennai', '9638527410', '49.00', 4, '196.00', '2023-04-18 06:59:13', 'Ordered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2),
-(21, 'Lemon soda', 'PALAMUTHIR SOLAI', '3/11 dindigul junction', 'Dindigul', '8520741963', '30.00', 9, '270.00', '2023-04-18 06:59:30', 'Delivered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2),
-(22, 'Jumbo Burger', 'KFC', '345/1, Paris corner', 'Chennai', '9638520147', '299.00', 9, '2691.00', '2023-04-18 06:59:52', 'Ordered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2),
-(23, 'Veg Briyani', 'AMMA MESS', '43/2, Near Thiruchendoor bus stand,', 'Thiruchendoor', '8529630258', '150.00', 2, '300.00', '2023-04-18 07:01:40', 'Delivered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2),
-(24, 'Briyani', 'DINDIGUL THALAPAAKATTY', '3/11 dindigul junction', 'Dindigul', '9516341789', '299.00', 6, '1794.00', '2023-04-18 07:13:05', 'Ordered', 'Balagi p', '9876543210', 'balagi23@gmail.com', 'Alanganallur, Madurai-9', 'No', 3),
-(25, 'Strawberry Juice', 'PALAMUTHIR SOLAI', '4/18, South veli street,', 'Madurai', '8520963074', '80.00', 20, '1600.00', '2023-04-18 07:13:38', 'Delivered', 'Balagi p', '9876543210', 'balagi23@gmail.com', 'Alanganallur, Madurai-9', 'No', 3);
+INSERT INTO `basket_rest` (`id`, `food`, `rest_name`, `rest_address`, `rest_district`, `rest_number`, `price`, `qty`, `total`, `order_date`, `status`, `cust_name`, `cust_contact`, `cust_email`, `cust_address`, `is_pet`, `user_id`, `order_taken`) VALUES
+(12, 'Briyani', 'DINDIGUL THALAPAAKATTY', '3/11 dindigul junction', 'Dindigul', '9516341789', '299.00', 9, '2691.00', '2023-04-17 08:50:19', 'Delivered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2, 'Ramesh(9876543212)'),
+(18, 'Venilla Ice Cream', 'ARUN ICE CREAM', 'South veli street,', 'Madurai', '7539518523', '30.00', 6, '120.00', '2023-04-18 06:37:39', 'Ordered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2, ''),
+(19, 'Shell Soup', 'ASIAN SEA FOODS', '3/40, Vivekananda street,', 'Rameeswaram', '7365412089', '399.00', 3, '1197.00', '2023-04-18 06:58:55', 'Ordered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2, ''),
+(20, 'Waffle with fruits', 'THAI STREET FOOD', '60, kodambakkam main road,', 'Chennai', '9638527410', '49.00', 4, '196.00', '2023-04-18 06:59:13', 'Ordered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2, ''),
+(21, 'Lemon soda', 'PALAMUTHIR SOLAI', '3/11 dindigul junction', 'Dindigul', '8520741963', '30.00', 9, '270.00', '2023-04-18 06:59:30', 'Delivered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2, 'vicky(9876543211)'),
+(22, 'Jumbo Burger', 'KFC', '345/1, Paris corner', 'Chennai', '9638520147', '299.00', 9, '2691.00', '2023-04-18 06:59:52', 'On Delivery', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2, 'vicky(9876543211)'),
+(23, 'Veg Briyani', 'AMMA MESS', '43/2, Near Thiruchendoor bus stand,', 'Thiruchendoor', '8529630258', '150.00', 2, '300.00', '2023-04-18 07:01:40', 'Delivered', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2, 'vicky(9876543211)'),
+(24, 'Briyani', 'DINDIGUL THALAPAAKATTY', '3/11 dindigul junction', 'Dindigul', '9516341789', '299.00', 6, '1794.00', '2023-04-18 07:13:05', 'Ordered', 'Balagi p', '9876543210', 'balagi23@gmail.com', 'Alanganallur, Madurai-9', 'No', 3, ''),
+(25, 'Strawberry Juice', 'PALAMUTHIR SOLAI', '4/18, South veli street,', 'Madurai', '8520963074', '80.00', 20, '1600.00', '2023-04-18 07:13:38', 'Cancelled', 'Balagi p', '9876543210', 'balagi23@gmail.com', 'Alanganallur, Madurai-9', 'No', 3, ''),
+(26, 'Donut with chocolate ', 'ANANDHA BAHAVAN', '9/12, sidco , Near Race course', 'Thiruchendoor', '8369741258', '99.00', 6, '594.00', '2023-04-19 08:17:05', 'On Delivery', 'vigneshwaran M', '8189950272', 'vignesh510510@gmail.com', '4/11, ganapathy servai street, k.pudur, Madurai-7', 'Yes', 2, 'vicky(9876543211)');
 
 -- --------------------------------------------------------
 
@@ -219,7 +223,7 @@ CREATE TABLE `category_rest` (
 --
 
 INSERT INTO `category_rest` (`id`, `title`, `image_name`, `featured`, `active`) VALUES
-(27, 'Juice', 'Food_Category_52095.jpg', 'Yes', 'Yes'),
+(27, 'Juice', 'Food_Category_60773.jpg', 'Yes', 'Yes'),
 (28, 'Snacks', 'Food_Category_52604.jpg', 'Yes', 'Yes'),
 (29, 'Veg food', 'Food_Category_48280.jpg', 'Yes', 'Yes'),
 (30, 'Non veg food', 'Food_Category_81433.jpg', 'Yes', 'Yes'),
@@ -256,6 +260,54 @@ CREATE TABLE `chef_hire` (
 INSERT INTO `chef_hire` (`id`, `username`, `pwd`, `name`, `age`, `image_name`, `salary_work`, `salary_function`, `skills`, `experience`, `register_date`, `contact`, `email`, `address`) VALUES
 (7, 'damu123', '01f2c411c16164f4ac76c65a9d37c17e', 'Mr.damu', 60, 'Food_Category_89439.jpg', '60000', '8000', 'chinese, italian and many more', '15', '2023-04-13 02:39:13', '9635874165', 'vignesh510waran@gmail.com', 'shenoy nagar, chennai-20'),
 (8, 'venkat123', '540893ccaaacbea53e865c309edf8e76', 'venkat bhat', 40, 'Food_Category_53304.jpg', '55000', '10000', 'Indian , French and many more', '10', '2023-04-13 08:12:53', '9630258741', 'balaji@gmail.com', 'Triplicane, chennai-8');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `delivery_home`
+--
+
+CREATE TABLE `delivery_home` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `delivery_boy_name` varchar(200) NOT NULL,
+  `delivery_boy_number` varchar(20) NOT NULL,
+  `delivery_boy_address` varchar(255) NOT NULL,
+  `delivery_boy_district` varchar(255) NOT NULL,
+  `username` varchar(200) NOT NULL,
+  `pwd` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `delivery_home`
+--
+
+INSERT INTO `delivery_home` (`id`, `delivery_boy_name`, `delivery_boy_number`, `delivery_boy_address`, `delivery_boy_district`, `username`, `pwd`) VALUES
+(1, 'balagi', '9876543213', '20 thiruvalluvar street, Tnagar, chennai-13', 'Chennai-13', 'balagi510', 'fc2ed646a17b1c2756509b79056586a8'),
+(2, 'Rajesh', '8765432100', '20 thiruvalluvar street, Tnagar, chennai', 'Chennai-13', 'rajesh510', '47c9d09d2824a6103f731df27d2bf53c');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `delivery_rest`
+--
+
+CREATE TABLE `delivery_rest` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `delivery_boy_name` varchar(200) NOT NULL,
+  `delivery_boy_number` varchar(20) NOT NULL,
+  `delivery_boy_address` varchar(255) NOT NULL,
+  `delivery_boy_district` varchar(255) NOT NULL,
+  `username` varchar(200) NOT NULL,
+  `pwd` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `delivery_rest`
+--
+
+INSERT INTO `delivery_rest` (`id`, `delivery_boy_name`, `delivery_boy_number`, `delivery_boy_address`, `delivery_boy_district`, `username`, `pwd`) VALUES
+(1, 'vicky', '9876543211', '20 thiruvalluvar street, Thillai nagar, madurai', 'Madurai', 'vicky510', '24bb329e3f4253b5788baea1ff097cb5'),
+(3, 'Ramesh', '9876543212', ' Tnagar, chennai', 'Chennai-13', 'ramesh510', 'bf09b051da696d6e7e8557cb05107ff5');
 
 -- --------------------------------------------------------
 
@@ -547,17 +599,19 @@ CREATE TABLE `train_service` (
   `cust_name` varchar(100) NOT NULL,
   `cust_email` varchar(200) NOT NULL,
   `cust_number` varchar(20) NOT NULL,
-  `status` varchar(20) NOT NULL
+  `status` varchar(20) NOT NULL,
+  `order_taken` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `train_service`
 --
 
-INSERT INTO `train_service` (`id`, `food`, `qty`, `train_name`, `train_url`, `rest_name`, `rest_url`, `order_date`, `cust_name`, `cust_email`, `cust_number`, `status`) VALUES
-(3, 'fish briyani', '5', 'Tejas', 'https://goo.gl/maps/5YPeFePjGFMvbR1F6', 'Madurai Patti Kadai', '    https://goo.gl/maps/rjBr3D1s8jWWXVvY7', '2023-04-11 08:32:00', 'vigneshwaran M', 'vignesh510510@gmail.com', '8189950272', 'Delivered'),
-(4, 'Tandoori chicken, mutton briyani(each)', '4', 'Tejas Express', 'https://goo.gl/maps/5YPeFePjGFMvbR1F6', 'AMMAN HOTEL', 'https://goo.gl/maps/1GRTmKFnqfh6bjdJ8', '2023-04-11 08:35:51', 'Vishnu', 'vishnuhero2001@gmail.com', '9188950652', 'On Delivery'),
-(5, 'Prawn shawarma', '10', 'Kollam Express', 'https://goo.gl/maps/BmpuiAD2nrsiq3i59', 'Hotel Anugraka', 'https://goo.gl/maps/1mciG5EmGkmoKHku6', '2023-04-11 09:48:48', 'Balagi P', 'Balagiradi@gmail.com', '96748530', 'Ordered');
+INSERT INTO `train_service` (`id`, `food`, `qty`, `train_name`, `train_url`, `rest_name`, `rest_url`, `order_date`, `cust_name`, `cust_email`, `cust_number`, `status`, `order_taken`) VALUES
+(3, 'fish briyani', '5', 'Tejas', 'https://goo.gl/maps/5YPeFePjGFMvbR1F6', 'Madurai Patti Kadai', '    https://goo.gl/maps/rjBr3D1s8jWWXVvY7', '2023-04-11 08:32:00', 'vigneshwaran M', 'vignesh510510@gmail.com', '8189950272', 'Delivered', 'vicky(9876543211)'),
+(4, 'Tandoori chicken, mutton briyani(each)', '4', 'Tejas Express', 'https://goo.gl/maps/5YPeFePjGFMvbR1F6', 'AMMAN HOTEL', 'https://goo.gl/maps/1GRTmKFnqfh6bjdJ8', '2023-04-11 08:35:51', 'Vishnu', 'vishnuhero2001@gmail.com', '9188950652', 'Cancelled', ''),
+(5, 'Prawn shawarma', '10', 'Kollam Express', 'https://goo.gl/maps/BmpuiAD2nrsiq3i59', 'Hotel Anugraka', 'https://goo.gl/maps/1mciG5EmGkmoKHku6', '2023-04-11 09:48:48', 'Balagi P', 'Balagiradi@gmail.com', '96748530', 'On Delivery', 'Ramesh(9876543212)'),
+(6, 'Ragi Malt, Orange Juice(each)', '3', 'Tejas', 'https://goo.gl/maps/JkmffEayRLXPseBc7', 'Cine suvai Restaurant', 'https://goo.gl/maps/24GCCx9SbyauFY2R9', '2023-04-19 04:34:56', 'vishnu', 'vishnu23@gmail.com', '8976543210', 'On Delivery', 'Ramesh(9876543212)');
 
 -- --------------------------------------------------------
 
@@ -662,6 +716,18 @@ ALTER TABLE `chef_hire`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `delivery_home`
+--
+ALTER TABLE `delivery_home`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `delivery_rest`
+--
+ALTER TABLE `delivery_rest`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `food_home`
 --
 ALTER TABLE `food_home`
@@ -747,13 +813,13 @@ ALTER TABLE `admin_rest`
 -- AUTO_INCREMENT for table `basket_home`
 --
 ALTER TABLE `basket_home`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `basket_rest`
 --
 ALTER TABLE `basket_rest`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `books`
@@ -778,6 +844,18 @@ ALTER TABLE `category_rest`
 --
 ALTER TABLE `chef_hire`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `delivery_home`
+--
+ALTER TABLE `delivery_home`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `delivery_rest`
+--
+ALTER TABLE `delivery_rest`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `food_home`
@@ -831,7 +909,7 @@ ALTER TABLE `reservation`
 -- AUTO_INCREMENT for table `train_service`
 --
 ALTER TABLE `train_service`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user_home`
