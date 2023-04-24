@@ -21,249 +21,51 @@
 |Team member 2 :| Balagi P | https://www.linkedin.com/in/balagi-parthasarathy-854b9916a |
 
 
+## Table of contents
+* [Project Description](#project-description)
+* [System Architecture](#system-architecture)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+
 
 ## Project Description:
-An Integrated web application used to order restaurant and home made foods, hire chefs, learn to cook foods through blog, podcasts, etc. This system will makes the food industry very effective.
+An Integrated web application used to order restaurant and home made foods, hire chefs, learn to cook foods through blog, podcasts, etc. This system will makes the food industry very effective.	
+
+	
+## System Architecture:
+
+![architecture diagram](https://user-images.githubusercontent.com/103897625/233459918-1df51789-e437-4fd4-9d65-97572f6e4c68.png)
 
 
+## Technologies
+Project is created with:
 
-## File Structure
+![Tux, the Linux mascot](https://img.icons8.com/color/48/40C057/html-5--v1.png)   ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/css3.png) ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/javascript.png) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/php.png) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/bootstrap.png)  ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/mysql.png) 
 
+    HTML, CSS, Java Script, Bootstrap, Php, MySQL
+ 
+ 
+ ## Setup
+To run this Project you need to first download and install the following Requirements given below:
 
-```bash
-    foodies
-       |        
-       |____Back-end
-       |        |   
-       |        |____config (DB Connection for Back end)
-       |        | 
-       |        |        
-       |        |____Home-food
-       |        |         |
-       |        |         |
-       |        |         |____admin
-       |        |                 |  
-       |        |                 |____partials
-       |        |                 |        |
-       |        |                 |        |______footer.php
-       |        |                 |        |
-       |        |                 |        |______login-check.php
-       |        |                 |        |
-       |        |                 |        |______menu.php
-       |        |                 |        
-       |        |                 |____add-admin.php  
-       |        |                 |        
-       |        |                 |____add-category.php              
-       |        |                 |           
-       |        |                 |____add-food.php
-       |        |                 |
-       |        |                 |____delete-admin.php
-       |        |                 |
-       |        |                 |____delete-category.php
-       |        |                 |
-       |        |                 |_____index.php
-       |        |                 |
-       |        |                 |_____login-home.php
-       |        |                 |
-       |        |                 |_____logout-home.php
-       |        |                 |
-       |        |                 |_____manage-admin.php
-       |        |                 |
-       |        |                 |_____manage-category.php
-       |        |                 |
-       |        |                 |_____manage-food.php
-       |        |                 |
-       |        |                 |_____manage-order.php
-       |        |                 |
-       |        |                 |_____update-admin.php
-       |        |                 |
-       |        |                 |_____update-category.php
-       |        |                 |
-       |        |                 |_____update-food.php
-       |        |                 |
-       |        |                 |______update-order.php
-       |        |                 |
-       |        |                 |______update-password.php
-       |        |                 |
-       |        |                 |
-       |        |                 |_______css
-       |        |                          |
-       |        |                          |____admin.css
-       |        | 
-       |        | 
-       |        |                         
-       |        |____Restaurant-food
-       |                  |
-       |                  |
-       |                  |____admin
-       |                          |  
-       |                          |____partials
-       |                          |        |
-       |                          |        |______footer.php
-       |                          |        |
-       |                          |        |______login-check.php
-       |                          |        |
-       |                          |        |______menu.php
-       |                          |        
-       |                          |____add-admin.php  
-       |                          |        
-       |                          |____add-category.php              
-       |                          |           
-       |                          |____add-food.php
-       |                          |
-       |                          |____delete-admin.php
-       |                          |
-       |                          |____delete-category.php
-       |                          |
-       |                          |_____index.php
-       |                          |
-       |                          |_____login-rest.php
-       |                          |
-       |                          |_____logout-rest.php
-       |                          |
-       |                          |_____manage-admin.php
-       |                          |
-       |                          |_____manage-category.php
-       |                          |
-       |                          |_____manage-food.php
-       |                          |
-       |                          |_____manage-order.php
-       |                          |
-       |                          |_____update-admin.php
-       |                          |
-       |                          |_____update-category.php
-       |                          |
-       |                          |_____update-food.php
-       |                          |
-       |                          |______update-order.php
-       |                          |
-       |                          |______update-password.php
-       |                          |
-       |                          |______update-reservation.php
-       |                          |
-       |                          |______update-train.php
-       |                          |
-       |                          |
-       |                          |_______css
-       |                                   |
-       |                                   |____admin.css
-       |                        
-       |                         
-       |_____Blog                         
-       |       |                         
-       |       |____add-books.php                         
-       |       |                         
-       |       |____add-podcast.php                         
-       |       |                         
-       |       |____add-receipies-eng.php                         
-       |       |                         
-       |       |____add-receipies-tam.php                          
-       |       |                         
-       |       |____update-receipies-eng.php                      
-       |       |                         
-       |       |____update-receipies-tam.php                          
-       |
-       |
-       |
-       |
-       |
-       |
-       |
-       |______Chef
-       |        |
-       |        |___partials                     
-       |        |       |
-       |        |       |____footer.php               
-       |        |       |               
-       |        |       |_____login-check.php
-       |        |       |
-       |        |       |_____menu.php
-       |        |
-       |        |
-       |        |       
-       |        |                       
-       |        |                      
-       |        |____hiring-details.php                       
-       |        |
-       |        |____index.php                       
-       |        |                       
-       |        |____login-chef.php
-       |        |                                      
-       |        |____logout-check.php                       
-       |        |
-       |        |____manage-notification.php                                       
-       |        |                      
-       |        |____register-chef.php 
-       |                                             
-       |                               
-       |        
-       |                                             
-       |                                
-       |                                
-       |
-       |
-       |
-       |
-       |____Front-end
-       |        |   
-       |        |____about
-       |        |      |____about.html (About page)
-       |        | 
-       |        |____css
-       |        |      |____style.css (Css for all webpages)
-       |        |    
-       |        |____features
-       |        |        |
-       |        |        |_____Blog
-       |        |        |
-       |        |        |_____Chef
-       |        |        |
-       |        |        |_____Train-service
-       |        | 
-       |        |  
-       |        |____food-types
-       |        |        |
-       |        |        |______Home-made
-       |        |        |          |
-       |        |        |          |______home-categories.php  (Categories page)
-       |        |        |          |
-       |        |        |          |______home-categories-foods.php
-       |        |        |          |
-       |        |        |          |______home-foods.php     (Food menu page)
-       |        |        |          |
-       |        |        |          |______home-food-search.php
-       |        |        |          |
-       |        |        |          |______home-made.php (Home page for Home made foods)
-       |        |        |          |
-       |        |        |          |______home-order.php
-       |        |        |           
-       |        |        |
-       |        |        |______Restaurant
-       |        |                   |
-       |        |                   |______restaurant.php    (Home Page for Restaurant foods)
-       |        |                   |
-       |        |                   |______rest-categories.php   (Categories page)
-       |        |                   |
-       |        |                   |______rest-categories-foods.php
-       |        |                   |
-       |        |                   |______rest-foods.php     (Food menu page)
-       |        |                   |
-       |        |                   |______rest-food-search.php
-       |        |                   |
-       |        |                   |______rest-order.php     
-       |        |        
-       |        |____images(all images)
-       |        |____pdf
-       | 
-       |
-       |____Add-rest_home-made.php
-       |
-       |____index.php
-       |
-       |____Harversine-formula.txt
-       |
-       |____Remaining Train & chef main page
+### Requirements
+
+* Download and Install any local web server such as __XAMPP__.
+* Download the provided source code zip file by simply copy and paste it in any web browser.
 ```
+https://github.com/vicky-510/A-Software-System-for-Integrated-Food-Ordering-and-Delivery/archive/refs/heads/master.zip
+```
+## System Installation:
+
+* Open your XAMPP Control Panel and start __Apache__ and __MySQL__.
+* Extract the downloaded source code zip file.
+* Copy the extracted source code folder and paste it into the XAMPP's __"htdocs"__ directory.
+* Browse the __PHPMyAdmin__ in a browser. i.e. __http://localhost/phpmyadmin__
+* Create a new database naming __foodies__.
+* Import the provided SQL file. The file is known as __foodies.sql__ located above the hire_chef.php file.
+* Browse the Software System for Integrated Food Ordering and Delivery in a browser. i.e. __http://localhost/foodies__.
+
  
  
 ## 🔗 Links
@@ -272,13 +74,12 @@ An Integrated web application used to order restaurant and home made foods, hire
 
 
 ## Author
-
 - [@Vigneshwaran M](https://www.github.com/vicky-510)
 
 
 ## Support
 
-For support, email vignesh510510@gmail.com or join our Slack channel.
+For support, email vignesh510510@gmail.com or join our Telegram Group.
 
 
 
