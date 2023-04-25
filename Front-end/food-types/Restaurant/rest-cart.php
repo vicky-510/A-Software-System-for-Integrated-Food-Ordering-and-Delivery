@@ -132,7 +132,9 @@
                           <th>Food<br> title</th>
                           <th>Restaurant <br>details</th>
                           <th>Total Price</th>
-                          <th>Payment Mode: <br>(Cash On-Delivery)
+                          <th>Payment Mode: <br>(Cash On-Delivery)/<br>
+                          Online Payment(G Pay):94446 03820<br>
+                          (once Payment done send <br>screenshot to above email ID:)
                           <br><br> 
                             Order Status                        </tr>
                        
@@ -260,8 +262,8 @@
                        
                     <!---<a href="#"><input type="submit" name="check" value="Check out" class="btn btn-primary1"></a>  -->
 
-                    </span ><br>
-                    <span style="color:Navy; background-color:violet; padding:4px 8px; border-radius:5px;">Order taken to <br>Delivery By:<br> <?php echo $order_taken;?></span>
+                    </span ><br><br>
+                    <span style="color:Navy; background-color:violet; padding:4px 8px; border-radius:5px;">Order taken to <br><br>Delivery By:<br><br> <?php echo $order_taken;?></span>
  
                     
                     

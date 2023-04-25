@@ -132,7 +132,10 @@
                           <th>Food<br> title</th>
                           <th>Restaurant <br>details</th>
                           <th>Total Price</th>
-                          <th>Payment Mode: <br>(Cash On-Delivery)<br><br> 
+                          <th>Payment Mode: <br>(Cash On-Delivery)/<br>
+                          Online Payment(G Pay):94446 03820<br>
+                          (once Payment done send<br> screenshot to above email ID:)
+                          <br><br>  
                             Order Status </th>
                         </tr>
                        
@@ -177,6 +180,8 @@
                                    $order_address=$rows['cust_address'];
                                    $order_pet=$rows['is_pet'];
                                    $order_id=$rows['user_id'];
+                                   $order_taken=$rows['order_taken'];
+
 
                               
 
@@ -192,19 +197,19 @@
 
                        
                         
-                        <td style="padding:2px;"><span style="background-color:green; padding:4px 8px; border-radius:5px; color:white">Restaurant name: <?php echo $home_name?>
+                        <td style="padding:2px;"><span style="background-color:green; padding:4px 8px; border-radius:5px; color:white">Home made chef name: <?php echo $home_name?>
                         <input type="hidden" name="home_name" value="<?php echo $home_name?>">
                     </span> <br><br> 
 
-                        <span style="background-color:violet; padding:4px 8px; border-radius:5px; color:white">Restaurant address: <?php echo $home_address?>
+                        <span style="background-color:violet; padding:4px 8px; border-radius:5px; color:white">Home made chef address: <?php echo $home_address?>
                         <input type="hidden" name="home_address" value="<?php echo $home_address?>">
                     </span><br> <br> 
 
-                        <span style="background-color:red; padding:4px 8px; border-radius:5px; color:white">Restaurant district: <?php echo $home_district?>
+                        <span style="background-color:red; padding:4px 8px; border-radius:5px; color:white">Home made chef district: <?php echo $home_district?>
                         <input type="hidden" name="home_district" value="<?php echo $_dishometrict?>">
                     </span><br> <br>
 
-                        <span style="background-color:yellow; padding:4px 8px; border-radius:5px; color:black">Restaurant number: <?php echo $home_number?>
+                        <span style="background-color:yellow; padding:4px 8px; border-radius:5px; color:black">Home made chef number: <?php echo $home_number?>
                         <input type="hidden" name="home_number" value="<?php echo $home_number?>">
                         <input type="hidden" name="order_name" value="<?php echo $order_name?>">
                         <input type="hidden" name="order_contact" value="<?php echo $order_contact?>">
@@ -255,11 +260,15 @@
                     
                     <!---<a href="#"><input type="submit" name="check" value="Check out" class="btn btn-primary1"></a>  -->
 
-                    </span ><br> 
+                  
                     
                     <!---<a href="#"><input type="submit" name="check" value="Check out" class="btn btn-primary1"></a>  -->
 
-                    </span ><br> 
+                    </span ><br> <br><br>
+                    <span style="color:Navy; background-color:violet; padding:4px 8px; border-radius:5px;">Order taken to <br><br>Delivery By:<br><br> <?php echo $order_taken;?></span>
+ 
+                    
+                    
                     
                     
                     </td>
