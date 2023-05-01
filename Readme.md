@@ -64,7 +64,7 @@ https://github.com/vicky-510/A-Software-System-for-Integrated-Food-Ordering-and-
 * Browse the __PHPMyAdmin__ in a browser. i.e. __http://localhost/phpmyadmin__
 * Create a new database naming __foodies__.
 * Import the provided SQL file. The file is known as __foodies.sql__ located above the hire_chef.php file.
-* Browse the Software System for Integrated Food Ordering and Delivery in a browser. i.e. __http://localhost/foodies__.
+* Browse the Software System for Integrated Food Ordering and Delivery in a browser. i.e. __http://localhost/foodies/__.
 
  
  
